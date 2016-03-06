@@ -12,16 +12,44 @@ body {
 	margin: 0 auto;
 	height: 100%;
 	width: 100%;
+	
+
+
+}
+
+@-webkit-keyframes Animation {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+@keyframes Animation { 
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
 }
 
 body #opacity {
 	height: 100%;
 	width: 100%;
-	background-color: rgba(204, 204, 204, 0.9);
+	background: linear-gradient(139deg, rgba(254, 195, 161, 0.8), rgba(254, 106, 70, 0.8), rgba(254, 200, 91, 0.8), rgba(183, 205, 228, 0.8), rgba(190, 190, 190, 0.8));
+	background-size: 1000% 1000%;
+
+-webkit-animation: Animation 29s ease infinite;
+-moz-animation: Animation 29s ease infinite;
+animation: Animation 29s ease infinite;
 	margin: 0 auto;
 	padding: 0;
 	overflow: auto;
+
+
 }
+
+
 
 
 
@@ -50,6 +78,8 @@ body #opacity {
   -moz-transition: .5s ease-in-out;
   -o-filter: grayscale(100%); 
   -o-transition: .5s ease-in-out;
+  transition: hollow all;
+
 
 }
 
