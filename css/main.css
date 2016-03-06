@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+html {
+	height: 100%;
+	width: 100%;
+	
+}
+
+body {
+	background-image: url("http://pre03.deviantart.net/2c06/th/pre/i/2013/136/3/e/free_hexagon_pattern_02_by_black_light_studio-d65g32i.png");
+	background-position-x: 10px;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+}
+
+body #opacity {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(204, 204, 204, 0.9);
+	margin: 0 auto;
+	padding: 0;
+	overflow: auto;
+}
+
+/*h1 {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 70px;
+	margin-bottom: 0;
+}
+
+h1#second_header {
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	font-size: 70px;
+	margin-top: 0;
+
+}*/
+
+img#knife_icon {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	margin-left: 630px;
+}
+
+
+.slider img {
+	height: 600px;
+	width: 800px;
+
+}
+
+.slider img:hover {
+	color: pink;
+}
