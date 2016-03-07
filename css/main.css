@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css?family=Martel:300);
+
+html {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+body {
+	background-image: url("https://cdn.vectorstock.com/i/composite/58,57/ice-cream-pattern-vector-1775857.jpg");
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+}
+
+body #opacity {
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(139deg, rgba(255, 194, 203, 0.8), rgba(253, 196, 236, 0.8), rgba(245, 213, 253, 0.8), rgba(199, 239, 240, 0.8), rgba(146, 204, 221, 0.8));
+	background-size: 1000% 1000%;
+	margin: 0 auto;
+	padding: 0;
+	overflow: auto;
+	-webkit-animation: Animation 29s ease infinite;
+	-moz-animation: Animation 29s ease infinite;
+	animation: Animation 29s ease infinite;
+}
+
+@-webkit-keyframes Animation {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+
+@-moz-keyframes Animation {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+
+@keyframes Animation { 
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+
+.slider img {
+	height: 300px;
+	width: 500px;
+	margin: 40px auto;
+	border: solid #AFDDDF 5px;
+	-webkit-filter: grayscale(0%);
+  	-webkit-transition: .5s ease-in-out;
+  	-moz-transition: .5s ease-in-out;
+  	-moz-filter: grayscale(0%);
+}
+
+.slider img:hover {
+	-webkit-filter: grayscale(100%);
+  	-webkit-transition: .5s ease-in-out;
+  	-moz-filter: grayscale(100%); 
+  	-moz-transition: .5s ease-in-out;
+  	transition: hollow all;
+}
+
+div .char1 {
+	text-align: center;
+}
+
+h1.title {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.title div {
+	margin-top: 30px;
+    display:inline-block;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    line-height: 70px;
+   	font-size: 55px;
+	color: white;
+	margin-right: 5px;
+}
+
+.title [class*="char"]:nth-child(3n+1) {
+	background-color: #FEBB8E;
+}
+
+.title [class*="char"]:nth-child(3n+2) {
+	background-color: #A4E4C2;
+}
+
+.title [class*="char"]:nth-child(3n+3) {
+	background-color: #AFDDDF;
+}
+
+.title:hover [class*="char"]:nth-child(3n+1) {
+ 	-webkit-animation: color-2 1s infinite;
+    -moz-animation: color-2 1s infinite;
+    animation: color-2 1s infinite;
+}
+
+.title:hover [class*="char"]:nth-child(3n+2) {
+    -webkit-animation: color-3 1s infinite;
+    -moz-animation: color-3 1s infinite;
+    animation: color-3 1s infinite;
+}
+
+.title:hover [class*="char"]:nth-child(3n+3) {
+    -webkit-animation: color-1 1s infinite;
+    -moz-animation: color-1 1s infinite;
+    animation: color-1 1s infinite;
+}
+
+@-webkit-keyframes color-1 {
+    0% { background: #AFDDDF; }
+   	33% { background: #FEBB8E; }
+    66% { background: #A4E4C2; }
+    100% { background: #AFDDDF;}
+}
+
+@-moz-keyframes color-1 {
+ 	0% { background: #AFDDDF; }
+    33% { background: #FEBB8E; }
+    66% { background: #A4E4C2; }
+    100% { background: #AFDDDF;}
+}
+
+@keyframes color-1 {
+ 	0% { background: #AFDDDF; }
+    33% { background: #FEBB8E; }
+    66% { background: #A4E4C2; }
+    100% { background: #AFDDDF;}
+}
+
+@-webkit-keyframes color-2 {
+    0% { background: #FEBB8E; }
+   	33% { background: #A4E4C2; }
+    66% { background: #AFDDDF; }
+    100% { background: #FEBB8E;}
+}
+
+@-moz-keyframes color-2 {
+ 	0% { background: #FEBB8E ; }
+    33% { background: #A4E4C2; }
+    66% { background: #AFDDDF ; }
+    100% { background: #FEBB8E ;}
+}
+
+@keyframes color-2 {
+ 	0% { background: #FEBB8E; }
+    33% { background: #A4E4C2 ; }
+    66% { background: #AFDDDF; }
+    100% { background: #FEBB8E;}
+}
+
+@-webkit-keyframes color-3 {
+    0% { background: #A4E4C2; }
+   	33% { background: #AFDDDF; }
+    66% { background: #FEBB8E; }
+    100% { background: #A4E4C2;}
+}
+
+@-moz-keyframes color-3 {
+ 	0% { background: #A4E4C2; }
+    33% { background: #AFDDDF; }
+    66% { background: #FEBB8E; }
+    100% { background: #A4E4C2;}
+}
+
+@keyframes color-3 {
+ 	0% { background: #A4E4C2; }
+    33% { background: #AFDDDF; }
+    66% { background: #FEBB8E; }
+    100% { background: #A4E4C2;}
+}
+
+.slick-prev:before {
+    color: white;
+    font-size: 50px;
+}
+
+.slick-next:before {
+    margin-left: 0px;
+    color: white;
+    font-size: 50px;
+}
+
+.slick-next {
+	right: 25%;
+}
+
+.slick-prev {
+	left: 23%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
