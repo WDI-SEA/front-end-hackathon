@@ -1,0 +1,47 @@
+html {
+  background-image: url('../dark_embroidery.png')
+}
+
+header {
+  height: 400px;
+  margin-top: 1em;
+  background-image: url('../rob_zombie.png')
+}
+
+#left1 {
+  margin-top: 3em;
+  margin-left: 12em;
+  margin-bottom: 3em;
+  float: left;
+  border: solid white 3px;
+  height: 400px;
+  width: 400px;
+  background-color: grey;
+  font-family: Helvetica;
+  color: white;
+  opacity: .7;
+}
+
+#right1 {
+  margin-top: 3em;
+  margin-right: 12em;
+  margin-bottom: 3em;
+  border: solid white 3px;
+  float: right;
+  height: 400px;
+  width: 400px;
+  background-color: grey;
+  font-family: Helvetica;
+  color:white;
+  opacity: .7;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+  font-size: 24px;
+}
