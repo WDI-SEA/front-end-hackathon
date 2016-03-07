@@ -7,8 +7,8 @@ html {
 }
 
 body {
-	background-image: url("http://pre03.deviantart.net/2c06/th/pre/i/2013/136/3/e/free_hexagon_pattern_02_by_black_light_studio-d65g32i.png");
-	background-position-x: 10px;
+	background-image: url("https://cdn.vectorstock.com/i/composite/58,57/ice-cream-pattern-vector-1775857.jpg");
+	/*background-position-x: 10px;*/
 	margin: 0 auto;
 	height: 100%;
 	width: 100%;
@@ -36,7 +36,7 @@ body {
 body #opacity {
 	height: 100%;
 	width: 100%;
-	background: linear-gradient(139deg, rgba(254, 195, 161, 0.8), rgba(254, 106, 70, 0.8), rgba(254, 200, 91, 0.8), rgba(183, 205, 228, 0.8), rgba(190, 190, 190, 0.8));
+	background: linear-gradient(139deg, rgba(255, 194, 203, 0.8), rgba(253, 196, 236, 0.8), rgba(245, 213, 253, 0.8), rgba(199, 239, 240, 0.8), rgba(146, 204, 221, 0.8));
 	background-size: 1000% 1000%;
 
 -webkit-animation: Animation 29s ease infinite;
@@ -58,7 +58,7 @@ animation: Animation 29s ease infinite;
 	height: 300px;
 	width: 500px;
 	margin: 40px auto;
-	border: solid pink 10px;
+	border: solid #AFDDDF 5px;
 
   	-webkit-filter: grayscale(0%);
   -webkit-transition: .5s ease-in-out;
@@ -101,7 +101,6 @@ h1.title {
     height: 70px;
     width: 70px;
     border-radius:50%;
-    /*background-color: #AFDDDF;*/
     line-height: 70px;
    	font-size: 55px;
 	color: white;
