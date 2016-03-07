@@ -8,29 +8,9 @@ html {
 
 body {
 	background-image: url("https://cdn.vectorstock.com/i/composite/58,57/ice-cream-pattern-vector-1775857.jpg");
-	/*background-position-x: 10px;*/
 	margin: 0 auto;
 	height: 100%;
 	width: 100%;
-	
-
-
-}
-
-@-webkit-keyframes Animation {
-    0%{background-position:18% 0%}
-    50%{background-position:83% 100%}
-    100%{background-position:18% 0%}
-}
-@-moz-keyframes Animation {
-    0%{background-position:18% 0%}
-    50%{background-position:83% 100%}
-    100%{background-position:18% 0%}
-}
-@keyframes Animation { 
-    0%{background-position:18% 0%}
-    50%{background-position:83% 100%}
-    100%{background-position:18% 0%}
 }
 
 body #opacity {
@@ -38,51 +18,50 @@ body #opacity {
 	width: 100%;
 	background: linear-gradient(139deg, rgba(255, 194, 203, 0.8), rgba(253, 196, 236, 0.8), rgba(245, 213, 253, 0.8), rgba(199, 239, 240, 0.8), rgba(146, 204, 221, 0.8));
 	background-size: 1000% 1000%;
-
--webkit-animation: Animation 29s ease infinite;
--moz-animation: Animation 29s ease infinite;
-animation: Animation 29s ease infinite;
 	margin: 0 auto;
 	padding: 0;
 	overflow: auto;
-
-
+	-webkit-animation: Animation 29s ease infinite;
+	-moz-animation: Animation 29s ease infinite;
+	animation: Animation 29s ease infinite;
 }
 
+@-webkit-keyframes Animation {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
 
+@-moz-keyframes Animation {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
 
-
-
+@keyframes Animation { 
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
 
 .slider img {
 	height: 300px;
 	width: 500px;
 	margin: 40px auto;
 	border: solid #AFDDDF 5px;
-
-  	-webkit-filter: grayscale(0%);
-  -webkit-transition: .5s ease-in-out;
-  -moz-filter: grayscale(0%);
-  -moz-transition: .5s ease-in-out;
-  -o-filter: grayscale(0%);
-  -o-transition: .5s ease-in-out;
-
-
-
+	-webkit-filter: grayscale(0%);
+  	-webkit-transition: .5s ease-in-out;
+  	-moz-transition: .5s ease-in-out;
+  	-moz-filter: grayscale(0%);
 }
 
 .slider img:hover {
-	  -webkit-filter: grayscale(100%);
-  -webkit-transition: .5s ease-in-out;
-  -moz-filter: grayscale(100%); 
-  -moz-transition: .5s ease-in-out;
-  -o-filter: grayscale(100%); 
-  -o-transition: .5s ease-in-out;
-  transition: hollow all;
-
-
+	-webkit-filter: grayscale(100%);
+  	-webkit-transition: .5s ease-in-out;
+  	-moz-filter: grayscale(100%); 
+  	-moz-transition: .5s ease-in-out;
+  	transition: hollow all;
 }
-
 
 div .char1 {
 	text-align: center;
@@ -92,8 +71,6 @@ h1.title {
 	margin-bottom: 0;
 	margin-top: 0;
 }
-
-
 
 .title div {
 	margin-top: 30px;
@@ -200,12 +177,9 @@ h1.title {
     100% { background: #A4E4C2;}
 }
 
-
 .slick-prev:before {
     color: white;
     font-size: 50px;
-    
-    
 }
 
 .slick-next:before {
