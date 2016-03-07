@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>D3 Stuff</title>
@@ -12,11 +13,19 @@
 <body>
     <h1>Experimenting with D3</h1>
     
-    <div class="d3clock">
-        <h4>D3 SVG Clock</h4>
+    <div class="d3clock shiftright">
+        <p>D3 SVG Clock</p>
         <svg class="chartclock" height="300" width="400"></svg>    
     </div>
     
+    <div class="shiftrightnobox">
+        <svg width="720" height="80">
+          <circle cx="160" cy="60" r="10"></circle>
+          <circle cx="200" cy="60" r="10"></circle>
+          <circle cx="240" cy="60" r="10"></circle>
+        </svg>
+    </div>
+
     <div class="chart">
         <p>This is a bar chart made using straight HTML</p>
         <div style="width: 40px;">4</div>
@@ -27,10 +36,28 @@
         <div style="width: 420px;">42</div>
     </div>
 
+    <div class="shiftrightnobox">
+        <svg width="720" height="80">
+          <circle cx="160" cy="60" r="10"></circle>
+          <circle cx="200" cy="60" r="10"></circle>
+          <circle cx="240" cy="60" r="10"></circle>
+        </svg>
+    </div>
+
     <div class="shiftright">
         <p>This is the same bar chart automatically generated using D3 with SVG.</p>
         <svg class="chartd3svg"></svg>
     </div>
+
+    <div class="shiftrightnobox">
+        <svg width="720" height="80">
+          <circle cx="160" cy="60" r="10"></circle>
+          <circle cx="200" cy="60" r="10"></circle>
+          <circle cx="240" cy="60" r="10"></circle>
+        </svg>
+    </div>
+
+    <div class="piano shiftpianoright"></div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

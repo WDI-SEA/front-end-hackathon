@@ -1,19 +1,34 @@
+body {
+    background-color: #E4E8FF;
+    font-family: 'Lobster', cursive;
+}
+
 /*CSS to align text*/
 
 .shiftright {
     border: 1px dashed black;
     width: 60em;
     padding: 3em;
-    margin: 3em auto;
+    margin: 0 auto;
+    background-color: #FFF2A4
+}
+
+.shiftrightnobox {
+    width: 30em;
+    margin: 0 auto;
+}
+
+.shiftpianoright {
+    width: 60em;
+    margin: 0 auto 0 17em;
 }
 
 /*D3 SVG Clock*/
 
 .d3clock {
-    height: 15em;
+    height: 20em;
     width: 60em;
-    padding: 3em;
-   
+    margin: 0 auto;
 }
 
 /*CSS for the HTML bar charts*/
@@ -22,22 +37,23 @@
     border: 1px dashed black;
     width: 60em;
     padding: 3em;
-    margin: 3em auto;
+    margin: 0 auto;
+    background-color: #FFF2A4
 }
 
 .chart div {
     font: 10px sans-serif;
-    background-color: steelblue;
+    background-color: #95ADCC;
     text-align: right;
     padding: 3px;
     margin: 1px;
     color: white;
 }
 
-/*CSS for the bar charts make automatically with D3 and SVG*/
+/*CSS for the bar charts made automatically with D3 and SVG*/
 
 .chartd3svg rect {
-  fill: steelblue;
+  fill: #95ADCC;
 }
 
 .chartd3svg text {
@@ -46,26 +62,20 @@
   text-anchor: end;
 }
 
-/*CSS for D3 SVG chart of alphabet letter popularity*/
-.bar {
-  fill: steelblue;
+/*CSS for Arc Piano*/
+
+
+.key {
+  stroke-width: 1.5px;
+  transition: fill 250ms linear, stroke 250ms linear;
+  transition-delay: 150ms;
 }
 
-.bar:hover {
-  fill: brown;
+.key:hover {
+  transition-delay: 0;
 }
 
-.axis {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.x.axis path {
-  display: none;
-}
+.key--white { fill: #fff; stroke: #777; }
+.key--black { fill: #333; stroke: #000; }
+.key--white:hover { fill: cyan; stroke: #00999b; }
+.key--black:hover { fill: magenta; stroke: #910099; }
