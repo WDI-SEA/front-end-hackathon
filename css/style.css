@@ -42,20 +42,22 @@ body{
   }
 
 .fancy_title [class*="char"]:nth-child(odd){
-    moz-transform: skewY(-10deg);
-    -webkit-transform: skewY(-10deg);
-    -o-transform: skewY(-10deg);
-    -ms-transform: skewY(-10deg);
-    transform: skewY(-10deg);
+    moz-transform: skewY(-25deg);
+    -webkit-transform: skewY(-25deg);
+    -o-transform: skewY(-25deg);
+    -ms-transform: skewY(-25deg);
+    transform: skewY(-25deg);
+    font-family: 'Audiowide', cursive;
   }
 .fancy_title [class*="char"]:nth-child(even){
     background: #0066ff;
     color: #fff;
-    moz-transform: skewY(10deg);
-    -webkit-transform: skewY(10deg);
-    -o-transform: skewY(10deg);
-    -ms-transform: skewY(10deg);
-    transform: skewY(10deg);
+    moz-transform: skewY(25deg);
+    -webkit-transform: skewY(25deg);
+    -o-transform: skewY(25deg);
+    -ms-transform: skewY(25deg);
+    transform: skewY(25deg);
+    font-family: 'Fontdiner Swanky', cursive;
   }
 
 
