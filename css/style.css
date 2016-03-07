@@ -1,0 +1,71 @@
+/*CSS to align text*/
+
+.shiftright {
+    border: 1px dashed black;
+    width: 60em;
+    padding: 3em;
+    margin: 3em auto;
+}
+
+/*D3 SVG Clock*/
+
+.d3clock {
+    height: 15em;
+    width: 60em;
+    padding: 3em;
+   
+}
+
+/*CSS for the HTML bar charts*/
+
+.chart {
+    border: 1px dashed black;
+    width: 60em;
+    padding: 3em;
+    margin: 3em auto;
+}
+
+.chart div {
+    font: 10px sans-serif;
+    background-color: steelblue;
+    text-align: right;
+    padding: 3px;
+    margin: 1px;
+    color: white;
+}
+
+/*CSS for the bar charts make automatically with D3 and SVG*/
+
+.chartd3svg rect {
+  fill: steelblue;
+}
+
+.chartd3svg text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+/*CSS for D3 SVG chart of alphabet letter popularity*/
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
