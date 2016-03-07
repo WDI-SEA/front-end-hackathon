@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>D3 Stuff</title>
+
+    
+</head>
+<body>
+    <h1>Experimenting with D3</h1>
+    
+    <!-- D3 with SVG Clock -->
+
+    <div class="d3clock shiftright">
+        <p>D3 SVG Clock</p>
+        <svg class="chartclock" height="300" width="400"></svg>    
+    </div>
+    
+    <!-- Three SVG dots -->
+
+    <div class="shiftrightnobox">
+        <svg width="720" height="80">
+          <circle cx="160" cy="60" r="10"></circle>
+          <circle cx="200" cy="60" r="10"></circle>
+          <circle cx="240" cy="60" r="10"></circle>
+        </svg>
+    </div>
+
+    <!-- HTML Chart -->
+
+    <div class="chart">
+        <p>This is a bar chart made using straight HTML</p>
+        <div style="width: 40px;">4</div>
+        <div style="width: 80px;">8</div>
+        <div style="width: 150px;">15</div>
+        <div style="width: 160px;">16</div>
+        <div style="width: 230px;">23</div>
+        <div style="width: 420px;">42</div>
+    </div>
+
+    <!-- Three SVG dots -->
+
+    <div class="shiftrightnobox">
+        <svg width="720" height="80">
+          <circle cx="160" cy="60" r="10"></circle>
+          <circle cx="200" cy="60" r="10"></circle>
+          <circle cx="240" cy="60" r="10"></circle>
+        </svg>
+    </div>
+
+    <!-- D3 SVG Chart -->
+
+    <div class="shiftright">
+        <p>This is the same bar chart automatically generated using D3 with SVG.</p>
+        <svg class="chartd3svg"></svg>
+    </div>
+
+    <!-- Three SVG dots -->
+
+    <div class="shiftrightnobox">
+        <svg width="720" height="80">
+          <circle cx="160" cy="60" r="10"></circle>
+          <circle cx="200" cy="60" r="10"></circle>
+          <circle cx="240" cy="60" r="10"></circle>
+        </svg>
+    </div>
+
+    <!-- D3 SVG Piano -->
+
+    <div class="piano shiftpianoright"></div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
