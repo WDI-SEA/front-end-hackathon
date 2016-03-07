@@ -2,19 +2,6 @@
 
 var data = [4, 8, 15, 16, 23, 42];
 
-// D3 chart creation
-
-var x = d3.scale.linear()
-    .domain([0, d3.max(data)])
-    .range([0, 420]);
-
-d3.select(".chartd3")
-    .selectAll("div")
-        .data(data)
-    .enter().append("div")
-        .style("width", function(d) { return d * 10 + "px"; })
-        .text(function(d) { return d; });
-
 // D3 chart creation with SVG
 
 var width = 420,
@@ -52,7 +39,7 @@ fields = function() {
   var currentTime, hour, minute, second;
   currentTime = new Date();
   second = currentTime.getSeconds();
-  minute = currentTime.getMinutes() + second / 60;
+  minute = currentTime.getMinutes();
   hour = currentTime.getHours() + minute / 60;
   return data = [
     {
@@ -80,6 +67,7 @@ scaleHours = d3.scale.linear().domain([0, 11 + 59/60]).range([0, 2 * pi]);
 
 var vis, clockGroup;
 
+//  Grabs the class .chartclock and adds in the code using javascript
 vis = d3.selectAll(".chartclock");
 
 clockGroup = vis.append("svg:g")
