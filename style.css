@@ -1,0 +1,73 @@
+h1 {
+  color: #69BE28;
+  font-weight: normal;
+  font-size: 1.75em;
+  letter-spacing: .2em;
+  line-height: 1.1em;
+  margin:0px;
+  text-align: center;
+}
+#container {
+  width:810px;
+  height:600px;
+  background: #003F85;
+}
+
+#header {
+  width:800px;
+  height: 50px;
+  padding: 5px;
+  background: #003F85;
+}
+
+#sidebar {
+  height:400px;
+  width:170px;
+  background: #003F85;
+  float:left;
+  padding: 5px;
+  color: #69BE28;
+}
+
+#content {
+    background-color:#ffffff;
+    height:400px;
+    width:450px;
+    float:left;
+}
+#footer {
+    width: 800px;
+    height: 50px;
+    background: #003F85;
+    float:left;
+    padding: 5px;
+    text-align: right;
+    color: #69BE28;
+}
+
+circle {
+    stroke-width: 2;
+    fill: white;
+}
+
+.d3-tip {
+    line-height: 1;
+    background: transparent;
+    color: #000;
+    border-radius: 2px;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: grey;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-size: 11px;
+}    
+
+ select, button {
+  width: 150px;
+ }
+
+
