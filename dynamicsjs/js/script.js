@@ -16,7 +16,7 @@ $(title).on('click', function(e) {
 	  scale: 2,
 	  opacity: 0.4
 	}, {
-	  type: dynamics.bounce,
+	  type: dynamics.forceWithGravity,
 	  frequency: 100,
 	  friction: 200,
 	  duration: 5000
@@ -26,10 +26,10 @@ $(title).on('click', function(e) {
 $(greycat).on('click', function(e) {
 	e.preventDefault();
 	dynamics.animate(greycat, {
-	  translateY: -750,
+	  translateY: -200,
 	  scale: 1.5,
 	}, {
-	  type: dynamics.bounce,
+	  type: dynamics.forceWithGravity,
 	  frequency: 100,
 	  friction: 200,
 	  duration: 2000
@@ -39,7 +39,9 @@ $(greycat).on('click', function(e) {
 $(orangecat).on('click', function(e) {
 	e.preventDefault();
 	dynamics.animate(document.querySelector('#orangecat'), {
-  translateX: 350
+  translateX: 100,
+  translateY: 50
+
 }, {
   type: dynamics.bounce
 	})
@@ -48,29 +50,24 @@ $(orangecat).on('click', function(e) {
 $(browncat).on('click', function(e) {
 	e.preventDefault();
 	dynamics.animate(browncat, {
-	  translateY: 550,
+	  translateY: -250,
 	  scale: .7,
 	}, {
-	  type: dynamics.bounce,
+	  type: dynamics.forceWithGravity,
 	  frequency: 100,
 	  friction: 200,
-	  duration: 2000
+	  duration: 1300
 	});
 });
 
 $(cat).on('click', function(e) {
 	console.log("bouncy cat");
-		dynamics.animate(cat, {
-	   translateX: 150
-	}, {
-	  type: dynamics.easeOut,
-	  duration: 2000,
-	  bounciness: 400,
-	});
+		
 	dynamics.animate(cat, {
-	    translateY: -100
+	    translateY: -100,
+	    scale: .5
 	  }, {
-	    type: dynamics.bounce,
+	    type: dynamics.forceWithGravity,
 	    bounciness: 400,
 	    duration: 2000,
 	    delay: 100
@@ -83,11 +80,11 @@ $(owl).on('click', function(e) {
 	 	dynamics.animate(owl, {
 		  translateY: -550
 		}, {
-  	type: dynamics.bounce
+  	type: dynamics.forceWithGravity
 		});
 		dynamics.animate(owl, {
 			rotateZ: 220,
-			rotateY: 180			
+						
 		}, {
 			type: dynamics.forceWithGravity,
 			friction: 200,
@@ -101,13 +98,13 @@ $('#allcats').on('click', function(e) {
 	function animateCats() {
 	  for(var i=0; i<cats.length; i++) {
 	    dynamics.animate(cats[i], {
-	      translateY: -70
+	      translateY: -100
 	    }, {
 	      type: dynamics.forceWithGravity,
 	      bounciness: 800,
-	      elasticity: 200,
-	      duration: 2000,
-	      delay: i * 400
+	      elasticity: 400,
+	      duration: 1000,
+	      delay: i * 300
 	    });
 	  }
 
@@ -131,4 +128,33 @@ $(function() {
   } );
 } );
 
+//spinning
+$('#spinning').click(function animate1() {
+	  dynamics.animate(cats, {
+	    rotateZ: 180,
+	    scale: 1.5
+	    
+	  }, {
+	    type: dynamics.linear,
+	    friction: 400,
+	    duration: 500,
+	    complete: animate2
+	  })
+	
 
+	function animate2() {
+	  dynamics.animate(cats, {
+	    rotateZ: 360,
+	    scale: 1
+	    
+	  }, {
+	    type: dynamics.linear,
+	    frequency: 600,
+	    friction: 400,
+	    duration: 800,
+	    anticipationSize: 350,
+	    anticipationStrength: 400,
+	    complete: animate1
+	  })
+	}
+});

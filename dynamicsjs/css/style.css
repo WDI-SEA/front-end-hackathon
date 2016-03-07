@@ -1,5 +1,6 @@
 .body {
 	background-image: url("images/congruent_pentagon.png");
+	text-align: center;
 	
 }
 
@@ -24,8 +25,13 @@
 .vector {
 	cursor: pointer;
 }
-.catgrid {
+#catgrid {
 	margin: auto 0;
+}
+
+.buttons {
+	display: inline-block;
+	text-align: center;
 }
 .cats {
 	display: inline-block;
