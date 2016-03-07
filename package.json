@@ -1,0 +1,23 @@
+{
+  "name": "front-end-hackathon",
+  "version": "1.0.0",
+  "description": "###Learn something new and build something cool in a weekend.",
+  "main": "index.js",
+  "dependencies": {
+    "d3": "^3.5.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nepios/front-end-hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nepios/front-end-hackathon/issues"
+  },
+  "homepage": "https://github.com/Nepios/front-end-hackathon#readme"
+}
