@@ -1,0 +1,70 @@
+body {
+  background-color: floralwhite;
+  margin: 0;
+  text-align: center;
+}
+
+.flowerSlideShow {
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.flowerSlideShow div img {
+  height: 350px;
+  overflow: hidden;
+  width: 250px;
+}
+
+header {
+  background-color: pink;
+  height: 100%;
+  padding-top: 12px;
+}
+
+@media (min-width: 480px) {
+  .flowerSlideShow div img {
+    height: 168px;
+    width: 120px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 600px) {
+  .flowerSlideShow div img {
+    height: 217px;
+    width: 155px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 720px) {
+  .flowerSlideShow div img {
+    height: 273px;
+    width: 195px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 900px) {
+  .flowerSlideShow div img {
+    height: 336px;
+    width: 240px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flowerSlideShow div img {
+    height: 448px;
+    width: 320px;
+    overflow: hidden;
+  }
+}
+
+.slick-current {
+
+}
+
+.slideshowImages {
+  padding: 0 15px;
+}
