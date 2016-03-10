@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.8/dragula.css' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Butcherman' rel='stylesheet' type='text/css'>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.8/dragula.min.js'></script>
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+  <title>Dragula: Front End Hackaton</title>
+</head>
+<body>
+<header>
+<h1 id="title-text">DRAGULA.JS EXAMPLE</h1>
+</header>
+<div class="container">
+  <div class="intro">
+    <p class="lead">Drag and drop items from your "To-Do" list to your "Done" list and start ticking off those tasks! Just realized you don't need to complete a particular task anymore? Just drag and drop that item outside of the list containers, and you're all set!</p>
+  </div>
+
+  <div class="row">  
+    <div id='left' class='container col-md-6 dragula-div'>
+      <div><h3>To-Do:</h3></div>
+      <div><h4>Create a better front-end hack-a-thon site</h4></div>
+      <div><h4>Continue quest to conquer Ruby on Rails</h4></div>
+      <div><h4>Take over world</h4></div>
+    </div>
+    <div id='right' class='container col-md-6 dragula-div'>
+      <div><h3>Done:</h3></div>
+      <div><h4>Remember a little javascript and jQuery</h4></div>
+      <div><h4>Experiment with a new JS library</h4></div>
+      <div><h4>Reference Rob Zombie in a homework assignment</h4></div>
+    </div>
+  </div>
+  <form class="form-inline" id="newtask">
+    <div class="form-group newtask">
+     <input type="text" class="form-control" placeholder="Eat.Sleep.Code.Repeat." size="50%">
+     <button type="submit" class="btn btn-danger">Add Task</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

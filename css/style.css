@@ -1,0 +1,39 @@
+body {
+  background-image: url('../dark_embroidery.png');
+  color: linen;
+}
+
+header {
+  height: 400px;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  background-image: url('../rob_zombie.png');
+  text-align: center;
+}
+
+#title-text { 
+   position: absolute; 
+   top: 300px; 
+   left: 0; 
+   width: 100%;
+   color: white;
+   text-shadow: 5px 5px 8px darkred;
+   font-size: 80px;
+   font-family: 'Butcherman'; 
+}
+
+.dragula-div {
+  border: solid white 3px;
+  background-color: grey;
+  color: linen;
+}
+
+.newtask {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+h3 {
+    font-weight: bold;
+    text-align: center;
+}
