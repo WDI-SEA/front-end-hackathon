@@ -1,47 +1,35 @@
-html {
-  background-image: url('../dark_embroidery.png')
+body {
+  background-image: url('../dark_embroidery.png');
+  color: linen;
 }
 
 header {
   height: 400px;
   margin-top: 1em;
-  background-image: url('../rob_zombie.png')
+  margin-bottom: 2em;
+  background-image: url('../rob_zombie.png');
+  text-align: center;
 }
 
-#left1 {
-  margin-top: 3em;
-  margin-left: 12em;
-  margin-bottom: 3em;
-  float: left;
-  border: solid white 3px;
-  height: 400px;
-  width: 400px;
-  background-color: grey;
-  font-family: Helvetica;
-  color: white;
-  opacity: .7;
+#title-text { 
+   position: absolute; 
+   top: 300px; 
+   left: 0; 
+   width: 100%;
+   color: white;
+   text-shadow: 5px 5px 8px darkred;
+   font-size: 80px;
+   font-family: 'Butcherman'; 
 }
 
-#right1 {
-  margin-top: 3em;
-  margin-right: 12em;
-  margin-bottom: 3em;
+.dragula-div {
   border: solid white 3px;
-  float: right;
-  height: 400px;
-  width: 400px;
   background-color: grey;
-  font-family: Helvetica;
-  color:white;
-  opacity: .7;
+  color: linen;
 }
+
 
 h3 {
-    font-size: 28px;
     font-weight: bold;
     text-align: center;
-}
-
-p {
-  font-size: 24px;
 }
