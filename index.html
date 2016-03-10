@@ -3,10 +3,12 @@
 <head>
 <link href='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.8/dragula.css' rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
 <link href='https://fonts.googleapis.com/css?family=Butcherman' rel='stylesheet' type='text/css'>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.8/dragula.min.js'></script>
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
   <title>Dragula: Front End Hackaton</title>
 </head>
 <body>
@@ -27,13 +29,17 @@
     </div>
     <div id='right' class='container col-md-6 dragula-div'>
       <div><h3>Done:</h3></div>
-      <div><h4>Create a better front-end hack-a-thon site</h4></div>
-      <div><h4>Continue quest to conquer Ruby on Rails</h4></div>
-      <div><h4>Take over world</h4></div>
+      <div><h4>Remember a little javascript and jQuery</h4></div>
+      <div><h4>Experiment with a new JS library</h4></div>
+      <div><h4>Reference Rob Zombie in a homework assignment</h4></div>
     </div>
   </div>
-<script type="text/javascript">
-  dragula([left, right], {removeOnSpill: true});
-</script>
+  <form class="form-inline" id="newtask">
+    <div class="form-group newtask">
+     <input type="text" class="form-control" placeholder="Eat.Sleep.Code.Repeat." size="50%">
+     <button type="submit" class="btn btn-danger">Add Task</button>
+    </div>
+  </form>
+</div>
 </body>
 </html>
