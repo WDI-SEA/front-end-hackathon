@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+	<link rel="stylesheet" href="css/style.css"/>
+  <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+  <script src="js/substance.js" language="Javascript"></script>
+  <script src="js/wave.js" language="JavaScript"></script>
+</head>
+<body>
+	<div id = "div_top">
+		<h1>
+			Temperature Converter
+		</h1>
+	</div>
+
+	<div id = "div_middle">
+<!-- 		<div id = "div_left">
+			
+		</div> -->
+		<div id = "div_right">
+			<svg id="fillgauge1" width="97%" height="250" onclick="gauge1.update(NewValue());"></svg>
+			<div id = "div_input_label" class="right_divs">
+				Input:
+			</div>
+
+			<div id = "div_input" class="right_divs">
+				<input id="input_temp" type="number" step="0.1" value="25"/>
+			</div>
+
+			<div id = "div_switch" class="right_divs">
+				<select name="convert_from">
+					<option value="C"> Celcius </option>
+					<option value="F"> Fahrenheit </option>
+					<option value="K"> Kelvin </option>
+				</select>
+				to
+				<select name="convert_to">
+					<option value="F"> Fahrenheit </option>
+					<option value="C"> Celcius </option>
+					<option value="K"> Kelvin </option>
+				</select>
+			</div>
+			
+<!-- 			<div id = "div_output_label" class="right_divs">
+				Output:
+			</div>
+
+			<div id="div_output" class="right_divs">
+				75 degrees C
+			</div> -->
+			
+		</div>
+	</div>
+	<script language="JavaScript">
+    var gauge1 = loadLiquidFillGauge("fillgauge1", 55);
+    var config1 = liquidFillGaugeDefaultSettings();
+    config1.circleColor = "#FF7777";
+    config1.textColor = "#FF4444";
+    config1.waveTextColor = "#FFAAAA";
+    config1.waveColor = "#FFDDDD";
+    config1.circleThickness = 0.2;
+    config1.textVertPosition = 0.2;
+    config1.waveAnimateTime = 1000;
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
