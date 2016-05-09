@@ -1,0 +1,67 @@
+<!--
+  Tutorial used to make this graph:
+http://code.tutsplus.com/tutorials/building-a-multi-line-chart-using-d3js--cms-22935
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+  <body class="contain">
+    <div class="background-div">
+      <video loop muted autoplay poster="resort.jpg" class="background-div-video">
+        <source src="snow-falling-vid-hq.m4v" type="video/mp4">
+      </video>
+    </div>
+    <nav class="nav">
+      <h1 class="nav-h1">POW!</span><span class="stash">stash</span></h1>
+    </nav>
+    <div>
+      <h1 class="page-title">Regional Comparison</h1>
+      <div class="graph" >
+        <svg id="visualisation1" class="visual" width="1000" height="500"></svg>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="page-title">Mount Baker</h1>
+      <h2 class="location pnw">Pacific Northwest</h2>
+      <div class="graph" >
+        <svg id="visualisation2" class="visual" width="1000" height="500"></svg>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="page-title">Alta, Utah</h1>
+      <h2 class="location west">West</h2>
+      <div class="graph" >
+        <svg id="visualisation3" class="visual" width="1000" height="500"></svg>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="page-title">Wolf Creek</h1>
+      <h2 class="location west">West</h2>
+      <div class="graph" >
+        <svg id="visualisation4" class="visual" width="1000" height="500"></svg>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="page-title">Jay Peak</h1>
+      <h2 class="location ne">Northeast</h2>
+      <div class="graph" >
+        <svg id="visualisation5" class="visual" width="1000" height="500"></svg>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="page-title">Whistler, BC</h1>
+      <h2 class="location ca-w">Western Canada</h2>
+      <div class="graph" >
+        <svg id="visualisation6" class="visual" width="1000" height="500"></svg>
+      </div>
+    </div>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

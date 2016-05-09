@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Megrim);
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Londrina+Shadow);
+
+
+body {
+  /*background-image: url('resort.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;*/
+}
+
+.visual {
+  color: white;
+}
+
+.graph {
+  background-color: transparent;
+  width: 800px;
+  margin: 3% 15% 10% 15%;
+}
+
+/* Video Styles */
+
+.background-div {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.background-div-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  background-color: black;
+  /*text-align: center;*/
+  color: white;
+  position: fixed;
+  width: 100%;
+  margin-top: -20px;
+  font-family: Bangers;
+}
+
+.nav-h1 {
+  font-size: 55px;
+  margin: 10px 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.stash {
+  font-family: Londrina Shadow;
+  padding:2px;
+}
+
+.page-title {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  font-size: 60px;
+}
+
+.location {
+  float:right;
+  margin: 0px 300px 0px 0px;
+}
+
+/*.pnw {
+  margin-right: 200px;
+}*/

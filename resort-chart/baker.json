@@ -1,0 +1,32 @@
+var snowfall = [{
+    "year": "2006",
+    "snowfall" : "659"
+  }, {
+    "year": "2007",
+    "snowfall" : "786"
+  } , {
+    "year": "2008",
+    "snowfall": "548"
+  } , {
+    "year" : "2009",
+    "snowfall": "634"
+  } , {
+    "year" : "2010",
+    "snowfall": "857"
+  } , {
+    "year" : "2011",
+    "snowfall": "808"
+  } , {
+    "year" : "2012",
+    "snowfall": "719"
+  } , {
+    "year" : "2013",
+    "snowfall": "623"
+  } , {
+    "year" : "2014",
+    "snowfall": "287"
+  } , {
+    "year" : " 2015",
+    "snowfall": "622"
+  }
+];
