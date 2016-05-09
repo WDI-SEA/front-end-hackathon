@@ -6,10 +6,11 @@
 	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="style.css">
 	 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-	 <link href="//vjs.zencdn.net/5.8/video-js.min.css" rel="stylesheet">
-	 <script src="//vjs.zencdn.net/5.8/video.min.js"></script>
-
- </head>
+	 <script src="mediaelement/build/jquery.js"></script>	
+	<script src="mediaelement/build/mediaelement-and-player.min.js"></script>
+<!-- 	<script src="mediaelement/demo/testforfiles.js"></script>	
+ -->	<link rel="stylesheet" href="mediaelement/build/mediaelementplayer.min.css" />
+</head>
 <body>
 		<ul class="nav nav-pills">
 		  <li role="presentation"><a href="index.html">HOME</a></li>
@@ -18,8 +19,33 @@
 		  <li role="presentation"><a href="#">NOTICE</a></li>
 		  <li role="presentation"><a href="lyrics.html">LYRICS</a></li>
 		</ul>
-		<img src="pics/twice-logo.jpg" id="logo">
+<div class="vid">
+	<video width="640" height="360" id="player1">
+	    
+	    <source type="video/youtube" src="https://www.youtube.com/watch?v=0rtV5esQT6I">
 
+	</video>
+		
+	<span id="player1-mode"></span>
+</div>
+
+<div class="vid">
+		<video width="640" height="360" id="player2">
+	    
+	    <source type="video/youtube" src="https://www.youtube.com/watch?v=c7rCyll5AeY">
+
+	</video>
+		
+	<span id="player2-mode"></span>
+</div>
+
+	<script>
+	$('video').mediaelementplayer({
+		success: function(media, node, player) {
+			$('#' + node.id + '-mode').html('mode: ' + media.pluginType);
+		}
+	});
+	</script>
 
 
 	<footer>
