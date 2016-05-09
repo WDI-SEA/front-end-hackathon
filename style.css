@@ -1,0 +1,9 @@
+body {
+	/*Image from subtlepatterns.com*/
+	background-image: url("wild_oliva_@2X.png");
+}
+
+#h1 {
+	color: white;
+	text-align: center;
+}
