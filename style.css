@@ -37,6 +37,8 @@ body {
 .words {
 	background-color: white;
 	opacity: .90;
+	padding-top: 1px;
+	padding-left: 20px;
 }
 
 @media screen and (max-width: 670px) {
@@ -71,4 +73,15 @@ body {
 	background-color: hotpink;
 	padding: 15px;
 	color: white;
+}
+
+.btn-group {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+footer {
+position:fixed;
+ bottom:10px;
+ right:10px;
 }
