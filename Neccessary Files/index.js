@@ -1,6 +1,6 @@
 
 
-  var colorSeed = 0;
+  // var colorSeed = 0; not using this right
   var notes = ['&#x266b','&#x2669', '&#x266a','&#119074', '&#9839', '&#9837', '&#9838', '&#119070', '&#119074', '&#119083'];
   var colors =['#dbff75','#f2e281','#00d8a2','#f5ee89', '#849bf8','#5690cb', '#ff8bba', '#ff80da'];
  
@@ -68,11 +68,11 @@
     // tween the base color that divs will be assigned when they start moving:
     // createjs.Tween.get(this, {loop: true}).to({colorSeed: 360}, 3000);
   }
-
-  function updateColor(tween) {
-    // grab the tween's target (the style object), and update it's color
-    tween._target.style.backgroundColor = "hsl(" + (Math.random() * 60 + colorSeed | 0) + ",100%,50%)";
-  }
+// not using this
+  // function updateColor(tween) {
+  //   // grab the tween's target (the style object), and update it's color
+  //   tween._target.style.backgroundColor = "hsl(" + (Math.random() * 60 + colorSeed | 0) + ",100%,50%)";
+  // }
 
   // very simple easing equation:
   function easeIn(ratio) {
