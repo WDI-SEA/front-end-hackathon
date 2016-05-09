@@ -52,12 +52,40 @@ function cheerRom	() {
 	}
 }
 
-// document.getElementById("en").onclick = LangEn();
-// document.getElementById("ko").onclick = LangKo();
-// document.getElementById("ro").onclick = LangRo();
+function Chaeyoung() {
+ document.body.style.backgroundImage = "url('pics/Chaeyoung.png')";
+ }
 
-// document.getElementById("en").onclick = Lang("en");
-// document.getElementById("ko").onclick =Lang("ko");
-// document.getElementById("ro").onclick = Lang("ro");
+function Dahyun() {
+ document.body.style.backgroundImage = "url('pics/Dahyun.png')";
+ }
+
+ function Jeongyeon() {
+ document.body.style.backgroundImage = "url('pics/Jeongyeon.png')";
+ }
+
+ function Jihyo() {
+ document.body.style.backgroundImage = "url('pics/Jihyo.png')";
+ }
+
+ function Mina() {
+ document.body.style.backgroundImage = "url('pics/Mina.png')";
+ }
+
+ function Momo() {
+ document.body.style.backgroundImage = "url('pics/Momo.png')";
+ }
+
+ function Nayeon() {
+ document.body.style.backgroundImage = "url('pics/Nayeon.png')";
+ }
+
+ function Sana() {
+ document.body.style.backgroundImage = "url('pics/Sana.png')";
+ }
+
+ function Tzuyu() {
+ document.body.style.backgroundImage = "url('pics/Tzuyu.png')";
+ }
 
 

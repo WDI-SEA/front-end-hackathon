@@ -25,7 +25,7 @@ a:hover {
 
 body {
     background-image: url("pics/bg-pc.jpg");
-    height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -35,10 +35,12 @@ body {
 }
 
 .words {
-	background-color: white;
-	opacity: .90;
+	background-color: hotpink;
+	opacity:.92;
+	color: white;
 	padding-top: 1px;
 	padding-left: 20px;
+	padding-bottom: 20px;
 }
 
 @media screen and (max-width: 670px) {
@@ -88,4 +90,16 @@ position:fixed;
 
 .vid {
 	margin: 50px;
+}
+
+.img-thumbnail {
+	height: 120px;
+}
+
+.btn {
+	background-color: hotpink;
+}
+
+.btn:hover {
+	background-color: hotpink;
 }
