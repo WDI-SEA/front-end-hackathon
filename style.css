@@ -58,8 +58,8 @@ body {
 
 @media screen and (max-width: 370px) {
 	.nav {
-	height: 138px;
-}
+		height: 138px;
+	}
 }
 
 #firsta {
@@ -94,6 +94,7 @@ position:fixed;
 
 .img-thumbnail {
 	height: 120px;
+	margin-bottom: 5px;
 }
 
 .btn {
