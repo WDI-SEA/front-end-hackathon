@@ -34,9 +34,9 @@ body {
 	 font-weight: bold;
 }
 
-.container {
+.words {
 	background-color: white;
-	opacity: .70;
+	opacity: .90;
 }
 
 @media screen and (max-width: 670px) {
@@ -56,4 +56,19 @@ body {
 	.nav {
 	height: 138px;
 }
+}
+
+#firsta {
+	max-height: 300px;
+}
+
+#seconda {
+	max-height: 300px;
+}
+
+.row {
+	margin-top: 10px;
+	background-color: hotpink;
+	padding: 15px;
+	color: white;
 }

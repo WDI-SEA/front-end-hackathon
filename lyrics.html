@@ -16,16 +16,41 @@
 		  <li role="presentation"><a href="lyrics.html">LYRICS</a></li>
 		</ul>
 
-	<ul>
-		  <li onclick="LangKo()"id="ko"><a href="#">1. OOH - AHH하게 - Lyrics</a></li>
-		  <li onclick="LangEn()" id="en"><a href="#">1. OOH - AHH하게 - Romanization</a></li>
-		</ul>
-	<button class="btn-danger" onclick="LangRo()" id="ro">random</button>
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Tracklist</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li class="dropdown-header">First Album</li>
+	  <li onclick="likeLyrics()"><a>OOH - AHH하게 - Lyrics</a></li>
+	  <li onclick="candyLyrics()"><a>Candy Boy - Lyrics</a></li>
+	  <li onclick="likeRom()"><a>OOH - AHH하게 - Romanization</a></li>
+	  <li onclick="candyRom()"><a>Candy Boy - Romanization</a></li>
+  </ul>
+</div>
+<!-- 
+	<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Tracklist
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+			  <li class="dropdown-header">First Album</li>
+			  <li onclick="likeLyrics()"><a>OOH - AHH하게 - Lyrics</a></li>
+			  <li onclick="candyLyrics()"><a>Candy Boy - Lyrics</a></li>
+			  <li onclick="likeRom()"><a>OOH - AHH하게 - Romanization</a></li>
+			  <li onclick="candyRom()"><a>Candy Boy - Romanization</a></li>
+			  <li onclick="LangRo()"><a>Random</a></li>
+			</ul>
+	</div> -->
+
 	<div class="container">
-	<h1 id="Title">Title</h1>
-		<div class="col-xs-5 col-sm-4 col-md-3 col-lg-3">
-			<p id="Lyrics">Lyrics</p>
-		</div>
+		<div class="words">
+			<h1 id="Title">Title</h1>
+					<p id="Lyrics">Lyrics</p>
+			</div>
 	</div>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
