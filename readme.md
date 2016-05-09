@@ -4,5 +4,9 @@ This page is totally experimental and was used as a chance for me to flex my min
 
 This page was built using HTML, CSS, BigVideo.js, and Foundation6. 
 
+** The videos and songs are not uploaded to github. The files were too large. 
+
+** Live site can be viewed at www.keidra.co/chill
+
 
 
