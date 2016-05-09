@@ -7,6 +7,10 @@
 	margin:auto;
 }
 
+.nav:hover {
+	opacity: 0.90;
+}
+
 a {
 	color:teal;
 	font-size: 18px;
@@ -49,10 +53,15 @@ body {
 	}
 	.nav {
 	height: 92px;
+	opacity: .3;
 }
 
 	#logo {
 		opacity: 0;
+	}
+
+	.img-thumbnail {
+		opacity: 0.3;
 	}
 }
 
@@ -96,6 +105,10 @@ position:fixed;
 	height: 120px;
 	margin-bottom: 5px;
 }
+.img-thumbnail:hover {
+	background-color: hotpink;
+	opacity: 1;
+}
 
 .btn {
 	background-color: hotpink;
@@ -103,4 +116,9 @@ position:fixed;
 
 .btn:hover {
 	background-color: hotpink;
+}
+
+.tracklist {
+	margin-top: 10px;
+	text-align: left;
 }
