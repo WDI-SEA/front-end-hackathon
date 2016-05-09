@@ -149,6 +149,8 @@ var runIt = function()
 		document.getElementsByName("convert_from")[0].value,
 		document.getElementsByName("convert_to")[0].value);
 
+	var convert_to = document.getElementsByName("convert_to")[0].value;
+
 	tempTo = tempTo * 1; // make sure it's a number
 
 	var colorString = determineColor(document.getElementById("input_temp").value,
@@ -161,7 +163,7 @@ var runIt = function()
 	//document.getElementById("div_output").innerHTML = " " + tempTo.toFixed(2) + " " + degrees;
 	//document.getElementById("div_left").style.backgroundColor = colorString;
 
-	gauge1.update(tempTo, colorString);
+	gauge1.update(tempTo, colorString, convert_to);
 }
 
 changeNumber.addEventListener("keyup", function(){

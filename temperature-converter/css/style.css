@@ -1,5 +1,5 @@
 body {
-	background-color: gray;
+	background-color: white;
 }
 
 div {
@@ -13,8 +13,8 @@ div {
 }
 
 #div_top{
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: #333333;
 	font-weight: bold;
 	font-size: 25px;
 }
@@ -23,36 +23,30 @@ div {
 	background-color: orange;
 }
 
-#div_left{
-	background-color: yellow;
-	height: 400px;
-	width: 50%;
-	float: left;
-}
-
 #div_right{
-	background-color: gray;
+	background-color: white;
 	height: 400px;
 	width: 100%;
 	float: right;
 }
 
 #div_input_label{
-	background-color: black;
+	background-color: white;
 	margin-top: 30px;
 	text-decoration: underline;
-	color: white;
+	color: #333333;
 }
 
 #div_input{
 	background-color: white;
+	width: 30%;
 }
 
 #div_output_label{
-	background-color: black;
+	background-color: white;
 	margin-top: 20px;
 	text-decoration: underline;
-	color: white;
+	color: #333333;
 	height: 22px;
 }
 
@@ -61,7 +55,8 @@ div {
 }
 
 #div_switch{
-	background-color: black;
+	background-color: white;
+	color: #333333;
 }
 
 #input_temp {
