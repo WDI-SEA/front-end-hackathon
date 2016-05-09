@@ -8,14 +8,24 @@
 
  </head>
 <body onload="start()">
-	<button class="btn-danger" onclick="LangEn()" id="en">English</button>
-	<button class="btn-danger" onclick="LangKo()"id="ko">Korean/한국어</button>
+		<ul class="nav nav-pills">
+		  <li role="presentation"><a href="index.html">PROFILE</a></li>
+		  <li role="presentation"><a href="discography.html">DISCOGRAPHY</a></li>
+		  <li role="presentation"><a href="#">VIDEO</a></li>
+		  <li role="presentation"><a href="#">NOTICE</a></li>
+		  <li role="presentation"><a href="lyrics.html">LYRICS</a></li>
+		</ul>
+
+	<ul>
+		  <li onclick="LangKo()"id="ko"><a href="#">1. OOH - AHH하게 - Lyrics</a></li>
+		  <li onclick="LangEn()" id="en"><a href="#">1. OOH - AHH하게 - Romanization</a></li>
+		</ul>
 	<button class="btn-danger" onclick="LangRo()" id="ro">random</button>
-	<div class="container-fluid">
+	<div class="container">
 	<h1 id="Title">Title</h1>
-	<div class="col-xs-5 col-sm-4 col-md-3 col-lg-3">
-		<p id="Lyrics">Lyrics</p>
-	</div>
+		<div class="col-xs-5 col-sm-4 col-md-3 col-lg-3">
+			<p id="Lyrics">Lyrics</p>
+		</div>
 	</div>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

@@ -17,15 +17,27 @@ a:hover {
    color: hotpink;
 }
 
+#logo {
+	height:200px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
 body {
     background-image: url("pics/bg-pc.jpg");
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-	background-color: aquamarine;		
+	 background-color: aquamarine;		
+	 color:teal;
+	 font-weight: bold;
 }
 
+.container {
+	background-color: white;
+	opacity: .70;
+}
 
 @media screen and (max-width: 670px) {
 	body {
@@ -34,6 +46,10 @@ body {
 	.nav {
 	height: 92px;
 }
+
+	#logo {
+		opacity: 0;
+	}
 }
 
 @media screen and (max-width: 370px) {

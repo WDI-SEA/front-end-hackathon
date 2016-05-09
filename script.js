@@ -1,15 +1,15 @@
-// set language
-var _lang = "en";
+// set track
+var _lang = "likeLyrics";
  
-// define translations
+// define translations/lyrics
 var title = {
-  en: "Save Me", 
-  ko: "Save Me", 
+  likeRom: "Like OOH-AHH", 
+  likeLyrics: "OOH - AHH하게", 
   ro: "Cupcakes"};
  
 var lyrics = {
-  en: "I want to breathe, I hate this night<br>I want to wake up, I hate this dream<br>I’m trapped inside of myself and I’m dead<br>Don’t wanna be lonely<br>Just wanna be yours<br>Why is it so dark where you’re not here<br>It’s dangerous how wrecked I am<br>Save me because I can’t get a grip on myself<br>Listen to my heartbeat<br>It calls you whenever it wants to<br>Because within this pitch black darkness<br>You are shining so brightly<br>Give me your hand save me save me<br>I need your love before I fall, fall<br>Give me your hand save me save me<br>I need your love before I fall, fall<br>Give me your hand save me save me<br>Give me your hand save me save me<br>Save me, save me<br>Today the moon shines brighter on the blank spot in my memories<br>It swallowed me, this lunatic, please save me tonight<br>(Please save me tonight, please save me tonight)<br>Within this childish madness you will save me tonight<br>I knew that your salvation<br>Is a part of my life and the only helping hand that will embrase my pain<br>The best of me, you’re the only thing I have<br>Please raise your voice so that I can laugh again<br>Play on <br>Listen to my heartbeat, it calls you whenever it wants to<br> Because within this pitch black darkness, you are shining so brightly<br>Give me your hand save me save me<br>I need your love before I fall, fall<br>Give me your hand save me save me<br>I need your love before I fall, fall<br>Give me your hand save me save me<br>Give me your hand save me save me<br>Thank you for letting me be me<br>For helping me fly<br>For giving me wings<br>For straightening me out<br>For waking me from being suffocated<br>For waking me from a dream which was all I was living in<br>When I think of you the sun comes out<br>So I gave my sadness to the dog<br>(Thank you. For being ‘us’)<br>Give me your hand save me save me<br>I need your love before I fall, fall<br>Give me your hand save me save me<br>I need your love before I fall, fall",
-  ko: "난 숨쉬고 싶어 이 밤이 싫어<br>이젠 깨고 싶어 꿈속이 싫어<br>내 안에 갇혀서 난 죽어있어<br>Don’t wanna be lonely<br>Just wanna be yours<br>왜 이리 깜깜한 건지 <br>니가 없는 이 곳은<br>위험하잖아 망가진 내 모습<br>구해줘 날 나도 날 잡을 수 없어<br>내 심장소릴 들어봐<br>제멋대로 널 부르잖아<br>이 까만 어둠 속에서<br>너는 이렇게 빛나니까<br>그 손을 내밀어줘 save me save me<br>I need your love before I fall fall<br>그 손을 내밀어줘 save me save me<br>I need your love before I fall fall<br>그 손을 내밀어줘 save me save me<br>그 손을 내밀어줘 save me save me<br>Save me save me<br>오늘따라 달이 빛나 내 기억 속의 빈칸<br>날 삼켜버린 이 lunatic <br>please save me tonight<br>Please save me tonight <br>please save me tonight<br>이 치기 어린 광기 속 <br>나를 구원해줄 이 밤<br>난 알았지 너란 구원이 <br>내 삶의 일부며 아픔을 <br>감싸줄 유일한 손길 <br>The best of me 난 너밖에 없지 <br>나 다시 웃을 수 있도록 더 높여줘 <br>니 목소릴<br>Play on<br>내 심장소릴 들어봐 <br>제멋대로 널 부르잖아<br>이 까만 어둠 속에서 <br>너는 이렇게 빛나니까<br>그 손을 내밀어줘 save me save me<br>I need your love before I fall fall<br>그 손을 내밀어줘 save me save me<br>I need your love before I fall fall<br>그 손을 내밀어줘 save me save me<br>그 손을 내밀어줘 save me save me<br>고마워 내가 나이게 해줘서<br>이 내가 날게 해줘서<br>이런 내게 날갤 줘서<br>꼬깃하던 날 개 줘서<br>답답하던 날 깨줘서<br>꿈 속에만 살던 날 깨워줘서<br>널 생각하면 날 개어서<br>슬픔 따윈 나 개 줬어<br>Thank you 우리가 돼 줘서<br>그 손을 내밀어줘 save me save me<br>I need your love before I fall fall<br>그 손을 내밀어줘 save me save me<br>I need your love before I fall fall<br>", 
+  likeRom: "modu nareul gajigo<br>maeil gaman an dujyo<br>naega neomu yeppeujyo<br>na ttaemune da himdeuljyo<br>eodil geotgo isseodo<br>ppalgan badagingeojyo<br>Red carpet gateun gibun<br>modu nal chyeoda bojyo oh<br>eotteon sarameun eomeonimi nugunyago<br>sinseonhage mal georeodo<br>amu neukkimi an deuljyo<br>hajiman nado nugunga hago sarange<br>ppajyeobogo sipeo baby<br>jal deureoyo nae boy<br>dan hanbeondo neukkyeobon jeok eopsneun geol<br>alge haejuneun<br>saram gidarigo issneun geol<br>eolmaga dwaedo gidarigo sipeo<br>I just wanna fall in love<br>eotteohge naega umjigil su eopsge<br>nal Ooh Ahh Ooh Ahh<br>hage mandeureojwo<br>gajja gajja jinsim eopsneun gajja<br>jal ga jal ga Huh<br>OOH AHHhage<br>eotteohge ije deo halmari eopsge<br>nal Ooh Ahh Ooh Ahh<br>hage mandeureojwo<br>Bla La La La malmanhaji malgo<br>neukkyeojige Huh<br>OOH AHHhage<br>nal bwa geobwa tto du beon bwa<br>hanbeon jinachigo<br>deungeul dollyeo chyeodabwa TWICE<br>eodil gadeorado hangsang min nacc<br>hajiman naega jeil biccna<br>najeun sinbal sineodo gachineun High<br>meorissogen neul yeonghwa sok gateun La La La<br>jangmyeondeuri jinagane<br>saenggakmanhaedo tteolline Yeah<br>ijeneun nado nugunga hago sarange<br>ppajyeo bogo sipeo baby<br>jal deureoyo nae boy<br>dan hanbeondo neukkyeobon jeok eopsneun geol<br>alge haejuneun<br>saram gidarigo issneun geol<br>eolmaga dwaedo gidarigo sipeo<br>I just wanna fall in love<br>eotteohge naega umjigil su eopsge<br>nal Ooh Ahh Ooh Ahh<br>hage mandeureojwo<br>gajja gajja jinsim eopsneun gajja<br>jal ga jal ga Huh<br>OOH AHHhage<br>eotteohge ije deo halmari eopsge<br>nal Ooh Ahh Ooh Ahh<br>hage mandeureojwo<br>Bla La La La malmanhaji malgo<br>neukkyeojige Huh<br>OOH AHHhage<br>amuhago manna sijakhagi silheo<br>swipji anheun yeoja geuge naingeol<br>Let me see<br>How you gon treat me<br>I ain’t no easy<br>Better think about it TWICE<br>Let me see<br>How you gon treat me<br>I ain’t no easy<br>Better think about it TWICE<br>eotteohge naega umjigil su eopsge<br>nal Ooh Ahh Ooh Ahh<br>hage mandeureojwo<br>gajja gajja jinsim eopsneun gajja<br>jal ga jal ga Huh<br>OOH AHHhage<br>eotteohge ije deo halmari eopsge<br>nal Ooh Ahh Ooh Ahh<br>hage mandeureojwo<br>Bla La La La malmanhaji malgo<br>neukkyeojige Huh<br>OOH AHHhage<br>OOH AHHhage ",
+  likeLyrics: "모두 나를 가지고<br>매일 가만 안 두죠<br>내가 너무 예쁘죠<br>나 때문에 다 힘들죠<br>어딜 걷고 있어도<br>빨간 바닥인거죠<br>Red carpet 같은 기분<br>모두 날 쳐다 보죠 oh<br>어떤 사람은 어머님이 누구냐고<br>신선하게 말 걸어도<br>아무 느낌이 안 들죠<br>하지만 나도 누군가 하고 사랑에<br>빠져보고 싶어 Baby<br>잘 들어요 내 Boy<br>단 한번도 느껴본 적 없는 걸<br>알게 해주는<br>사람 기다리고 있는 걸<br>얼마가 돼도 기다리고 싶어<br>I just wanna fall in love<br>어떻게 내가 움직일 수 없게<br>날 Ooh Ahh Ooh Ahh<br>하게 만들어줘<br>가짜 가짜 진심 없는 가짜<br>잘 가 잘 가 Huh<br>OOH AHH하게<br>어떻게 이제 더 할말이 없게<br>날 Ooh Ahh Ooh Ahh<br>하게 만들어줘<br>Bla La La La 말만하지 말고<br>느껴지게 Huh<br>OOH AHH하게<br>날 봐 거봐 또 두 번 봐<br>한번 지나치고<br>등을 돌려 쳐다봐 TWICE<br>어딜 가더라도 항상 민 낯<br>하지만 내가 제일 빛나<br>낮은 신발 신어도 가치는 High<br>머릿속엔 늘 영화 속 같은 La La La<br>장면들이 지나가네<br>생각만해도 떨리네 Yeah<br>이제는 나도 누군가 하고 사랑에<br>빠져 보고 싶어 Baby<br>잘 들어요 내 Boy<br>단 한번도 느껴본 적 없는 걸<br>알게 해주는<br>사람 기다리고 있는 걸<br>얼마가 돼도 기다리고 싶어<br>I just wanna fall in love<br>어떻게 내가 움직일 수 없게<br>날 Ooh Ahh Ooh Ahh<br>하게 만들어줘<br>가짜 가짜 진심 없는 가짜<br>잘 가 잘 가 Huh<br>OOH AHH하게<br>어떻게 이제 더 할말이 없게<br>날 Ooh Ahh Ooh Ahh<br>하게 만들어줘<br>Bla La La La 말만하지 말고<br>느껴지게 Huh<br>OOH AHH하게<br>아무하고 만나 시작하기 싫어<br>쉽지 않은 여자 그게 나인걸<br>Let me see<br>How you gon treat me<br>I ain’t no easy<br>Better think about it TWICE<br>Let me see<br>How you gon treat me<br>I ain’t no easy<br>Better think about it TWICE<br>어떻게 내가 움직일 수 없게<br>날 Ooh Ahh Ooh Ahh<br>하게 만들어줘<br>가짜 가짜 진심 없는 가짜<br>잘 가 잘 가 Huh<br>OOH AHH하게<br>어떻게 이제 더 할말이 없게<br>날 Ooh Ahh Ooh Ahh<br>하게 만들어줘<br>Bla La La La 말만하지 말고<br>느껴지게 Huh<br>OOH AHH하게<br>OOH AHH하게",
   ro: "Cupcake ipsum dolor sit amet. Toffee icing fruitcake dessert tart donut. Carrot cake tiramisu pudding. Lollipop cotton candy candy gummi bears cupcake pastry brownie. Powder candy canes cookie icing chocolate bar sesame snaps. Pudding sweet dessert cake. Cookie soufflé muffin. Cookie tiramisu gingerbread bear claw croissant gummies dessert sweet roll caramels. Soufflé jelly beans wafer macaroon. Cookie halvah sweet. Oat cake dessert sesame snaps. Liquorice cake wafer fruitcake gummies. Gummies jelly beans halvah candy canes bonbon."};
 function start() {
  document.getElementById("Title").innerHTML = title[_lang];
@@ -17,16 +17,16 @@ function start() {
 }
 
  function LangKo() {
-	_lang = "ko";
-	if(_lang == "ko") {
+	_lang = "likeLyrics";
+	if(_lang == "likeLyrics") {
 	 document.getElementById("Title").innerHTML = title[_lang];
  	 document.getElementById("Lyrics").innerHTML = lyrics[_lang];
 	}
 }
 
  function LangEn() {
-	_lang = "en";
-	if(_lang == "en") {
+	_lang = "likeRom";
+	if(_lang == "likeRom") {
 	 document.getElementById("Title").innerHTML = title[_lang];
  	 document.getElementById("Lyrics").innerHTML = lyrics[_lang];
 	}
