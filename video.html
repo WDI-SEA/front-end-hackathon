@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twice</title>
+	 <meta charset="UTF-8">
+	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="style.css">
+	 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	 <script src="mediaelement/build/jquery.js"></script>	
+	<script src="mediaelement/build/mediaelement-and-player.min.js"></script>
+<!-- 	<script src="mediaelement/demo/testforfiles.js"></script>	
+ -->	<link rel="stylesheet" href="mediaelement/build/mediaelementplayer.min.css" />
+</head>
+<body>
+		<ul class="nav nav-pills">
+		  <li role="presentation"><a href="index.html">HOME</a></li>
+		  <li role="presentation"><a href="profile.html">PROFILE</a></li>
+		  <li role="presentation"><a href="discography.html">DISCOGRAPHY</a></li>
+		  <li role="presentation"><a href="video.html">VIDEO</a></li>
+		  <li role="presentation"><a href="lyrics.html">LYRICS</a></li>
+		</ul>
+<div class="vid">
+	<video width="640" height="360" id="player1">
+	    
+	    <source type="video/youtube" src="https://www.youtube.com/watch?v=0rtV5esQT6I">
+
+	</video>
+		
+	<span id="player1-mode"></span>
+</div>
+
+<div class="vid">
+		<video width="640" height="360" id="player2">
+	    
+	    <source type="video/youtube" src="https://www.youtube.com/watch?v=c7rCyll5AeY">
+
+	</video>
+		
+	<span id="player2-mode"></span>
+</div>
+
+	<script>
+	$('video').mediaelementplayer({
+		success: function(media, node, player) {
+			$('#' + node.id + '-mode').html('mode: ' + media.pluginType);
+		}
+	});
+	</script>
+
+
+	<footer>
+		<div class="socmedia">
+			<a class="fa fa-facebook-square" href="https://www.facebook.com/JYPETWICE" style="font-size:24px"></a>
+			<a class="fa fa-instagram" style="font-size:24px" href="https://instagram.com/twicetagram"></a>
+			<a class="fa fa-twitter" style="font-size:24px" href="https://twitter.com/JYPETWICE"></a>
+			<a class="fa fa-youtube" style="font-size:24px" href="http://www.youtube.com/jypentertainment"></a>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

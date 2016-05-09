@@ -1,0 +1,124 @@
+.nav {
+	font-family:'Nanum Gothic',monospace;
+	background-color: white;
+	opacity: 0.90;
+	height: 46px;
+	width: 100%;
+	margin:auto;
+}
+
+.nav:hover {
+	opacity: 0.90;
+}
+
+a {
+	color:teal;
+	font-size: 18px;
+	align-content: right;
+	font-weight: bold;
+}
+a:hover {
+   color: hotpink;
+}
+
+#logo {
+	height:200px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+body {
+    background-image: url("pics/bg-pc.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+	 background-color: aquamarine;		
+	 color:teal;
+	 font-weight: bold;
+}
+
+.words {
+	background-color: hotpink;
+	opacity:.92;
+	color: white;
+	padding-top: 1px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 670px) {
+	body {
+		background-position: center bottom;
+	}
+	.nav {
+	height: 92px;
+	opacity: .3;
+}
+
+	#logo {
+		opacity: 0;
+	}
+
+	.img-thumbnail {
+		opacity: 0.3;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.nav {
+		height: 138px;
+	}
+}
+
+#firsta {
+	max-height: 300px;
+}
+
+#seconda {
+	max-height: 300px;
+}
+
+.row {
+	margin-top: 10px;
+	background-color: hotpink;
+	padding: 15px;
+	color: white;
+}
+
+.btn-group {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+footer {
+position:fixed;
+ bottom:10px;
+ right:10px;
+}
+
+.vid {
+	margin: 50px;
+}
+
+.img-thumbnail {
+	height: 120px;
+	margin-bottom: 5px;
+}
+.img-thumbnail:hover {
+	background-color: hotpink;
+	opacity: 1;
+}
+
+.btn {
+	background-color: hotpink;
+}
+
+.btn:hover {
+	background-color: hotpink;
+}
+
+.tracklist {
+	margin-top: 10px;
+	text-align: left;
+}

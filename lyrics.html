@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Korean Lyrics</title>
+	 <meta charset="UTF-8">
+	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="style.css">
+	 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+ </head>
+<body onload="start()">
+		<ul class="nav nav-pills">
+		  <li role="presentation"><a href="index.html">HOME</a></li>
+		  <li role="presentation"><a href="profile.html">PROFILE</a></li>
+		  <li role="presentation"><a href="discography.html">DISCOGRAPHY</a></li>
+		  <li role="presentation"><a href="video.html">VIDEO</a></li>
+		  <li role="presentation"><a href="lyrics.html">LYRICS</a></li>
+		</ul>
+
+<div class="container">
+
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Tracklist</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li class="dropdown-header">First Album</li>
+	  <li onclick="likeLyrics()"><a>OOH - AHH하게 - Lyrics</a></li>
+	  <li onclick="cheerLyrics()"><a>Cheer Up - Lyrics</a></li>
+	  <li onclick="likeRom()"><a>OOH - AHH하게 - Romanization</a></li>
+	  <li onclick="cheerRom()"><a>Cheer Up - Romanization</a></li>
+  </ul>
+</div>
+		<div class="words">
+			<h1 id="Title">Title</h1>
+					<p id="Lyrics">Lyrics</p>
+			</div>
+	</div>
+
+	<footer>
+		<div class="socmedia">
+			<a class="fa fa-facebook-square" href="https://www.facebook.com/JYPETWICE" style="font-size:24px"></a>
+			<a class="fa fa-instagram" style="font-size:24px" href="https://instagram.com/twicetagram"></a>
+			<a class="fa fa-twitter" style="font-size:24px" href="https://twitter.com/JYPETWICE"></a>
+			<a class="fa fa-youtube" style="font-size:24px" href="http://www.youtube.com/jypentertainment"></a>
+		</div>
+	</footer>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+</body>
+</html>
