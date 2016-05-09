@@ -1,0 +1,43 @@
+.nav {
+	font-family:'Nanum Gothic',monospace;
+	background-color: white;
+	opacity: 0.90;
+	height: 46px;
+	width: 100%;
+	margin:auto;
+}
+
+a {
+	color:teal;
+	font-size: 18px;
+	align-content: right;
+	font-weight: bold;
+}
+a:hover {
+   color: hotpink;
+}
+
+body {
+    background-image: url("pics/bg-pc.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+	background-color: aquamarine;		
+}
+
+
+@media screen and (max-width: 670px) {
+	body {
+		background-position: center bottom;
+	}
+	.nav {
+	height: 92px;
+}
+}
+
+@media screen and (max-width: 370px) {
+	.nav {
+	height: 138px;
+}
+}
