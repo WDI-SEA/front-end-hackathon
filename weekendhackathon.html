@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title>moving thing</title>
+        <!-- Babylon.js -->
+        <script src="http://www.babylonjs.com/hand.minified-1.2.js"></script>
+        <script src="http://www.babylonjs.com/cannon.js"></script>
+        <script src="http://www.babylonjs.com/oimo.js"></script>
+        <script src="http://www.babylonjs.com/babylon.js"></script>
+        <style>
+            html, body {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            #renderCanvas {
+                width: 100%;
+                height: 100%;
+                touch-action: none;
+            }
+        </style>
+    </head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    <script>
+        var canvas = document.getElementById("renderCanvas");
+        var engine = new BABYLON.Engine(canvas, true);
+
+        var createScene = function () {
+                	var scene = new BABYLON.Scene(engine);
+                	scene.clearColor = new BABYLON.Color3( 0.5, 0.5, 0.5);
+                	// camera
+                	var camera = new BABYLON.ArcRotateCamera("camera1",  0, 0, 0, new BABYLON.Vector3(0, 0, 0), scene);
+                	camera.setPosition(new BABYLON.Vector3(0, 10, -50));
+                	camera.attachControl(canvas, true);
+                	// Add a light
+                	var light = new BABYLON.HemisphericLight("hemi",
+                    new BABYLON.Vector3(0, 1, 0), scene);
+                	light.diffuse = new BABYLON.Color3(0, 0, 1);
+                	
+                	// Set its intensity and under-shine color
+                	light.intensity = 1;
+                	light.groundColor = new BABYLON.Color3(1.0, 0, 0);
+                	// material
+                	var mat = new BABYLON.StandardMaterial("mat1", scene);
+                  	mat.alpha = 1.0;
+                  	mat.diffuseColor = new BABYLON.Color3(0.5, 0.5, 1.0);
+                		mat.backFaceCulling = false;
+                
+                
+                	var paths = [];
+                	for (var t = 4; t <= 10; t++) {
+                		var path = [];
+                		for (var k = 0; k <= (2 * Math.PI); k++) {
+                		  var x = k * (Math.cos(6 * k));
+                		  var y = k * (Math.sin(6 * k));
+                		  var z = k*t;
+                		  path.push(new BABYLON.Vector3(x, y, z));
+                		}
+                		paths.push(path);
+                		var lines = BABYLON.Mesh.CreateLines("par", path, scene);
+                	}
+                	
+                	var ribbon = BABYLON.Mesh.CreateRibbon("rib", paths, false, false, 0, scene);
+        			ribbon.material = mat;
+        			var animationBox = new BABYLON.Animation("myAnimation", "scaling.z", 30, BABYLON.Animation.ANIMATIONTYPE_FLOAT, BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+        			var keys = []; 
+        			
+        			//At the animation key 0, the value of scaling is "1"
+        			  keys.push({
+        			    frame: 0,
+        			    value: 1
+        			  });
+        			
+        			  //At the animation key 20, the value of scaling is "0.2"
+        			  keys.push({
+        			    frame: 20,
+        			    value: 9
+        			  });
+        			
+        			  //At the animation key 100, the value of scaling is "1"
+        			  keys.push({
+        			    frame: 100,
+        			    value: 1
+        			  });
+        			  animationBox.setKeys(keys);
+        			  ribbon.animations.push(animationBox);
+        			  scene.beginAnimation(ribbon, 0, 100, true);
+        	
+                
+                    return scene;
+                };
+        
+        var scene = createScene();
+
+        engine.runRenderLoop(function () {
+            scene.render();
+        });
+
+        // Resize
+        window.addEventListener("resize", function () {
+            engine.resize();
+        });
+    </script>
+</body>
+</html>
