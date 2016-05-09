@@ -1,0 +1,16 @@
+body{
+  background-color: #000000;
+}
+
+
+
+#one{
+  position: absolute;
+  left: 25px;
+  top: 50px;
+  display: inline-block;
+    }
+
+    body {
+      overflow: hidden;
+    }
