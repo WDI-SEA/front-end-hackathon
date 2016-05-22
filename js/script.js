@@ -1,7 +1,4 @@
 $(function() {
-    // Use Modernizr to detect for touch devices, 
-    // which don't support autoplay and may have less bandwidth, 
-    // so just give them the poster images instead
     var screenIndex = 1,
         numScreens = $('.screen').length,
         isTransitioning = false,
@@ -21,13 +18,11 @@ $(function() {
         BV.getPlayer().addEvent('loadeddata', function() {
             onVideoLoaded();
         });
-        // adjust image positioning so it lines up with video
         $bigImage.css('position', 'relative').imagesLoaded(
             adjustImagePositioning);
-        // and on window resize
         $window.on('resize', adjustImagePositioning);
     }
-    // Next button click goes to next div
+    // Next button
     $('#next-btn').on('click', function(e) {
         e.preventDefault();
         if (!isTransitioning) {
@@ -43,7 +38,6 @@ $(function() {
 
     function next() {
         isTransitioning = true;
-        // update video index, reset image opacity if starting over
         if (screenIndex === numScreens) {
             $bigImage.css('opacity', 1);
             screenIndex = 1;
