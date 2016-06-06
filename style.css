@@ -1,9 +1,22 @@
-body {
-	/*Image from subtlepatterns.com*/
-	background-image: url("wild_oliva_@2X.png");
+/*body {
+	Image from subtlepatterns.com
+	
+}*/
+
+#container {
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	background-image: url("./photos/wild_oliva_@2X.png");
+	height: 800px;
 }
 
-#h1 {
+#stuperman {
+	background-image: url(./photos/Stuart-Superman.jpg);
+	height: 500px;
+}
+
+#h1, #life {
 	color: white;
 	text-align: center;
 }
