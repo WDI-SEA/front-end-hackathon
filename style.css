@@ -1,19 +1,26 @@
-/*body {
-	Image from subtlepatterns.com
-	
-}*/
+body {
+	background-color: orange;
+}
 
 #container {
 	border-width: 2px;
 	border-style: solid;
 	border-color: white;
 	background-image: url("./photos/wild_oliva_@2X.png");
-	height: 800px;
+	background-image: cover;
 }
 
 #stuperman {
 	background-image: url(./photos/Stuart-Superman.jpg);
-	height: 500px;
+	background-repeat: no-repeat;
+	height: 1000px;
+	width: 500px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#header {
+
 }
 
 #h1, #life {
