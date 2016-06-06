@@ -1,11 +1,14 @@
-
-
 #container {
 	border-width: 2px;
 	border-style: solid;
 	border-color: white;
 	background-image: url("./photos/wild_oliva_@2X.png");
 	background-image: cover;
+	height: 2000px;
+}
+
+label {
+	color: black;
 }
 
 #stuperman {
@@ -15,13 +18,16 @@
 	width: 500px;
 	margin-top: 10px;
 	margin-left: 10px;
+	position: fixed;
 }
 
 #header {
-
+	width: 800px;
+	float: right;
 }
 
 #h1, #life {
+	font-family: 'IM Fell Great Primer', serif;
 	color: white;
 	text-align: center;
 }
