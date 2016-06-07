@@ -4,7 +4,7 @@
 	border-color: white;
 	background-image: url("./photos/wild_oliva_@2X.png");
 	background-image: cover;
-	height: 2000px;
+	height: 1500px;
 }
 
 .navbar-fixed {
@@ -34,4 +34,11 @@
 	font-family: 'IM Fell Great Primer', serif;
 	color: white;
 	text-align: center;
+}
+
+#button {
+	height: 40px;
+	width: 310px;
+	margin-top: 300px;
+	margin-left: 820px;
 }
