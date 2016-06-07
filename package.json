@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bengus101/front-end-hackathon/issues"
   },
-  "homepage": "https://github.com/bengus101/front-end-hackathon#readme"
+  "homepage": "https://github.com/bengus101/front-end-hackathon#readme",
+  "devDependencies": {
+    "video.js": "^5.10.4"
+  }
 }
