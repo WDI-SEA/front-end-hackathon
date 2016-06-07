@@ -7,8 +7,8 @@
 	height: 2000px;
 }
 
-label {
-	color: black;
+.navbar-fixed {
+		font-family: 'IM Fell Great Primer', serif;
 }
 
 #stuperman {
