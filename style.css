@@ -4,7 +4,7 @@
 	border-color: white;
 	background-image: url("./photos/wild_oliva_@2X.png");
 	background-image: cover;
-	height: 1500px;
+	height: 1200px;
 }
 
 .navbar-fixed {
@@ -14,10 +14,8 @@
 #stuperman {
 	background-image: url(./photos/Stuart-Superman.jpg);
 	background-repeat: no-repeat;
-	height: 900px;
+	height: 760px;
 	width: 490px;
-	margin-top: 10px;
-	margin-left: 10px;
 	position: fixed;
 	border-style: solid;
 	border-width: 5px;
@@ -41,4 +39,15 @@
 	width: 310px;
 	margin-top: 300px;
 	margin-left: 820px;
+}
+
+#video-holder {
+	height: 755px;
+	width: 910px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
 }
