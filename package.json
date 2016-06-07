@@ -18,5 +18,8 @@
   "homepage": "https://github.com/bengus101/front-end-hackathon#readme",
   "devDependencies": {
     "video.js": "^5.10.4"
+  },
+  "dependencies": {
+    "express-session": "^1.13.0"
   }
 }
