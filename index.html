@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer' rel='stylesheet' type='text/css'>
+	<link href="http://vjs.zencdn.net/5.10.4/video-js.css" rel="stylesheet">
 </head>
 <body>
 	<div id="container">
@@ -42,10 +43,18 @@
 		</div>
 		<div id="video-holder">
 			<h1>video holder div</h1>
+			<video id="my-video" class="video-js" controls preload="auto" width="640" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+    			<source src="MY_VIDEO.mp4" type='video/mp4'>
+    			<source src="MY_VIDEO.webm" type='video/webm'>
+	    		<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that
+	      			<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+	  			</p>
+  			</video>
 		</div>
 	</div>
 	<script src="main.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	<script src="http://vjs.zencdn.net/5.10.4/video.js"></script>
 </body>
 </html>

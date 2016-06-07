@@ -51,3 +51,9 @@
 	margin-right: 20px;
 	margin-top: 20px;
 }
+
+#my-video {
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+}
