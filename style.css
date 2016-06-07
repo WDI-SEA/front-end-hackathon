@@ -14,19 +14,23 @@
 #stuperman {
 	background-image: url(./photos/Stuart-Superman.jpg);
 	background-repeat: no-repeat;
-	height: 1000px;
-	width: 500px;
+	height: 900px;
+	width: 490px;
 	margin-top: 10px;
 	margin-left: 10px;
 	position: fixed;
+	border-style: solid;
+	border-width: 5px;
+	border-color: red;
 }
 
 #header {
 	width: 800px;
 	float: right;
+	margin-right: 60px;
 }
 
-#h1, #life {
+#h1, #life, #blurb {
 	font-family: 'IM Fell Great Primer', serif;
 	color: white;
 	text-align: center;
