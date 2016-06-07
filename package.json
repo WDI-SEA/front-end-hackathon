@@ -20,6 +20,8 @@
     "video.js": "^5.10.4"
   },
   "dependencies": {
+    "ejs": "^2.4.2",
+    "express": "^4.13.4",
     "express-session": "^1.13.0"
   }
 }
