@@ -8,8 +8,8 @@ var session = require('express-session');
 var router = express.Router();
 
 //local dependencies 
-
 var app = express();
+var authCtrl = require('./controllers/auth');
 
 app.set('view engine', 'ejs');
 app.use(ejsLayouts);
@@ -31,5 +31,7 @@ app.get('/', function(req, res) {
 app.get('/linkloader', function(req, res) {
   res.render('linkloader');
 });
+
+app.use('/auth', authCtrl)
 
 app.listen(3000);
