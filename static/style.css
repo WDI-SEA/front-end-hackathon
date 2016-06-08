@@ -82,6 +82,14 @@
 #upload-button {
 	width: 175px;
 	float: right;
-	margin-top: 20px;
-	margin-right: 330px;
+	margin-top: 18px;
+	margin-right: 10px;
+	margin-left: 7px;
+}
+
+#go-back {
+	width: 150px;
+	float: right;
+	margin-top: 19px;
+	margin-right: 190px;
 }

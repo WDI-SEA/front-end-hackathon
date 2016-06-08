@@ -8,7 +8,6 @@ var session = require('express-session');
 var router = express.Router();
 
 //local dependencies 
-// var db = require('./models');
 
 var app = express();
 
