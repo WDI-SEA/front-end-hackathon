@@ -22,4 +22,8 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
+app.get('/linkloader', function(req, res) {
+  res.render('linkloader');
+});
+
 app.listen(3000);

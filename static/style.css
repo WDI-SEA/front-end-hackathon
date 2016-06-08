@@ -57,3 +57,31 @@
 	border-style: solid;
 	border-color: white;
 }
+
+#statement {
+	font-family: 'IM Fell Great Primer', serif;
+	color: white;
+	text-align: center;
+	width: 850px;
+	margin: 0 auto;
+	margin-top: 125px;
+}
+
+#url-container {
+	width: 600px;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-left: 300px;
+	margin-bottom: 0px;
+}
+
+#url {
+	color: white;
+}
+
+#upload-button {
+	width: 175px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 330px;
+}
