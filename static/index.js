@@ -6,7 +6,6 @@ $('#log-in-button').click(function() {
 	}).success(function(res){
 		console.log(res);
 	});
-	console.log('Clicked!');
 });
 
 $('#logout').click(function() {
@@ -14,8 +13,14 @@ $('#logout').click(function() {
 		type: "GET",
 		data: {username: $('#admin_username').val(), password: $('#admin_password').val()},
 		url: "/auth/logout"
-	}).success(function(res) {
-		// console.log(res);
-	})
-	console.log("SMP");
+	});
+});
+
+$('#upload-button').click(function() {
+	$.ajax({
+		type: "POST",
+		data: {url: $('#url').val()},
+		url: "/video"
+	});
+	console.log("Upload Clicked")
 });

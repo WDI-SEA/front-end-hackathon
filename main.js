@@ -5,18 +5,22 @@ var ejsLayouts = require('express-ejs-layouts');
 var mongoose = require('mongoose');
 var User = require('./models/user');
 var session = require('express-session');
-var router = express.Router();
 
 //local dependencies 
 var app = express();
 var User = require('./models/user');
+var Video = require('./models/video-link');
 var authCtrl = require('./controllers/auth');
+var videoCtrl = require('./controllers/video');
 
 app.set('view engine', 'ejs');
 app.use(ejsLayouts);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(__dirname + '/static'));
+
+app.use('/auth', authCtrl);
+app.use('/video', videoCtrl);
 
 app.use(session({
   secret: 'hoo de lolly dont steal my stuff',
@@ -47,8 +51,19 @@ app.post('/user', function(req, res) {
 	});
 });
 
-app.get('')
+app.post('/video', function(req, res) {
+	var newVideo = video({
+	url: 'https://www.youtube.com/embed/' + id
+	});
 
-app.use('/auth', authCtrl)
+	newVideo.save(function(err) {
+		if (err) onsole.log(err);
+		console.log('Video stored');
+	});
+});
+
+
+
+
 
 app.listen(3000);
