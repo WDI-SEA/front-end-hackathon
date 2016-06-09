@@ -9,7 +9,7 @@ router.post('/login', function(req, res) {
 });
 
 router.get('/logout', function(req, res) {
-	req.session.userId = false;
+	req.session.user.id = false;
 	console.log(req.session);
 	res.redirect('/');
 });
