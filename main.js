@@ -47,6 +47,8 @@ app.post('/user', function(req, res) {
 	});
 });
 
+app.get('')
+
 app.use('/auth', authCtrl)
 
 app.listen(3000);

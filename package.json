@@ -25,6 +25,7 @@
     "ejs": "^2.4.2",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
-    "mongoose": "^4.4.20"
+    "mongoose": "^4.4.20",
+    "video.js": "^5.10.4"
   }
 }
