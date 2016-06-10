@@ -14,10 +14,6 @@ videolinkSchema.set('toJSON', {
   }
 });
 
-videolinkSchema.pre('save', function(next) {
-
-});
-
 var videolink = mongoose.model('videolink', videolinkSchema);
 
 module.exports = videolink;  
