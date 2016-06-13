@@ -30,10 +30,16 @@ app.use(session({
   saveUninitialized: true
 }));
 
-mongoose.connect('mongodb://localhost:27017/Stuart');
-// mongodb://+process.env.MONGO_USER+":"+process.env<dbuser>:<dbpassword>@ds011374.mlab.com:11374/stuart, 
+
+if (process.env.MONGO_PROD) {
+  // mongodb:+process.env.MONGO_USER+":"+process.env<dbuser>:<dbpassword>@ds011374.mlab.com:11374/stuart, 
+  mongoose.connect(process.env.MONGO_PROD);
+} else {
+	mongoose.connect('mongodb://localhost:27017/Stuart');
+}
 
 app.get('/', function(req, res) {
+	console.log("root");
 	video.find({}, function (err, videos) {
 		console.log("all videos", videos);
 
@@ -61,5 +67,5 @@ app.post('/user', function(req, res) {
 
 
 
-
+console.log("port", 3000);
 app.listen(3000);
