@@ -36,6 +36,9 @@ mongoose.connect('mongodb://localhost:27017/Stuart');
 app.get('/', function(req, res) {
 	video.find({}, function (err, videos) {
 		console.log("all videos", videos);
+
+		videos.reverse()
+
 		res.render('index', {videos: videos});
 	});
 });

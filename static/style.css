@@ -1,10 +1,6 @@
-#container {
-	border-width: 2px;
-	border-style: solid;
-	border-color: white;
+html {
 	background-image: url("photos/wild_oliva_@2X.png");
 	background-image: cover;
-	height: 1200px;
 }
 
 .navbar-fixed {
@@ -45,9 +41,6 @@
 #video-holder {
 	height: 755px;
 	width: 910px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: white;
 	float: right;
 	margin-right: 20px;
 	margin-top: 20px;
