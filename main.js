@@ -12,6 +12,8 @@ var User = require('./models/user');
 var Video = require('./models/video-link');
 var authCtrl = require('./controllers/auth');
 var videoCtrl = require('./controllers/video');
+var video = require('./models/video-link');
+
 
 app.set('view engine', 'ejs');
 app.use(ejsLayouts);
@@ -32,7 +34,10 @@ mongoose.connect('mongodb://localhost:27017/Stuart');
 // mongodb://+process.env.MONGO_USER+":"+process.env<dbuser>:<dbpassword>@ds011374.mlab.com:11374/stuart, 
 
 app.get('/', function(req, res) {
-  res.render('index');
+	video.find({}, function (err, videos) {
+		console.log("all videos", videos);
+		res.render('index', {videos: videos});
+	});
 });
 
 app.get('/linkloader', function(req, res) {
@@ -50,6 +55,8 @@ app.post('/user', function(req, res) {
 		}
 	});
 });
+
+
 
 
 app.listen(3000);
