@@ -1,0 +1,23 @@
+	<div id="stuperman"></div>
+	<div id="header">
+		<h1 id="h1">Stuart Michael Patrick</h1>
+		<h1 id="life">11 May 1990 -- 08 May 2016</h1>
+			<h6 id="blurb">Son. Brother. Friend. That's who Stuart was to us. He was also a one of a kind man. Rugby player, superhero enthusiast, pub aficionado, Lord of the Rings buff, and avid Saints fan. He was also brave in over-coming a terrible disease. The purpose of this video blog is to celebrate Stuart's life by sharing the things that made him happy.</h6>
+	</div>
+	<div id="button">
+		<a href="/linkloader" class="waves-effect waves-light btn"><i class="material-icons right">movie</i>Click Here to Add a Video</a>
+	</div>
+	<div id="video-holder">
+	<% videos.forEach(function(video) { %>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/<%= video.url %>" frameborder="0" allowfullscreen></iframe>
+	<% }); %>
+	</div> 
+
+<script>
+	function loadVideo(id) {
+		var container = document.getElementById("video-holder");
+		var videoPlayer = document.getElementById("player");
+		videoPlayer.src = "https://www.youtube.com/embed/" + id; 
+	};
+</script>
+ 
