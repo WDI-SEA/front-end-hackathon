@@ -4,11 +4,6 @@ CHILL
 ____________________________________ 
 
 
-![Alt text](Screen4.png?raw=true "CHILL")
-![Alt text](Screen2.png?raw=true "RAGE")
-![Alt text](Screen3.png?raw=true "ELECTRONIC")
-![Alt text](Screen1.png?raw=true "FOCUS")
-
 _________________________________________________________________________________
 
 
@@ -25,6 +20,13 @@ ________________________________________________________________________________
 ** The videos and songs are not uploaded to github. The files were too large. 
 
 ** Live site can be viewed at www.keidra.co/chill
+
+
+![Alt text](Screen4.png?raw=true "CHILL")
+![Alt text](Screen2.png?raw=true "RAGE")
+![Alt text](Screen3.png?raw=true "ELECTRONIC")
+![Alt text](Screen1.png?raw=true "FOCUS")
+
 
 
 
