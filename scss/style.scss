@@ -1,0 +1,71 @@
+$brand: #40170A;
+$brand-secondary: #FFF;
+$r: 255;
+$g: 255;
+$b: 255;
+$font: 'Questrial', sans-serif;
+
+// @mixin box-shadow($right, $bottom, $blur, $color) {
+//   -webkit-box-shadow: $right, $bottom, $blur, $color;
+//   -ms-box-shadow: $right, $bottom, $blur, $color;
+//   -o-box-shadow: $right, $bottom, $blur, $color;
+// }
+
+// @mixin background-color($r, $g, $b, $a) {
+//   background-color: rgba($r, $g, $b, $a);
+//   background-color: rgb($r, $g, $b);
+// }
+
+body {
+  // background-image: url("../img/random_grey_variations.png");
+  background-color: $brand;
+}
+h1 {
+  color: $brand;
+}
+.workspace {
+  // @include background-color(126, 178, 151, 0.5);
+  background-color: rgba($r, $g, $b, 0.7);
+  // opacity: 0.5;
+  margin: 50px 50px;
+  border: none;
+  padding: 20px;
+  height: 500px;
+  box-shadow: 0px 0px 20px $brand-secondary;
+
+  ul {
+    list-style: none;
+    display: inline-block;
+  }
+}
+.cards {
+  float: right;
+  margin-right: 20px;
+}
+.card {
+  font-family: $font;
+  height: 150px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid gray;
+  margin: 30px 10px;
+  line-height: 150px;
+  box-shadow: 10px 10px 6px #666666;
+
+  ul {
+    list-style: none;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: normal;
+    padding: 20px 20px;
+    margin: 2px 2px;
+  }
+
+  li {
+    text-decoration: none;
+    line-height: 20px;
+    padding: 1px;
+    margin: 0;
+  }
+}
+
