@@ -6,7 +6,7 @@
 
   <title>BizKard</title>
   <!-- Google Font -->
-  <link href='@import url(https://fonts.googleapis.com/css?family=Questrial|Rock+Salt);' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu|Questrial|Rock+Salt|Niconne' rel='stylesheet' type='text/css'>
   <!-- Font-Awesome -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <!-- Local Style -->
@@ -15,17 +15,17 @@
 </head>
 <body>
   <div class="workspace">
-  <span class="fancy_title">BizKard</span>
-  <span class="subtitle">Kreate business cards</span>
-  <br>
-  <div class="content">
-    <h3>Front</h3><br>
-    <ul>
-      <li>
-        <label for="name">Name:</label>
-        <input name="name" data-bind="value: card.name" />
-      </li>
-      <li>
+    <span class="fancy_title">BizKard</span>
+    <span class="subtitle">Kreate business cards</span>
+    <br>
+    <div class="content">
+      <h3>Front</h3><br>
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input name="name" data-bind="value: card.name" />
+        </li>
+        <li>
         <label for="title">Title:</label>
         <input name="title" data-bind="value: card.title" />
       </li>
@@ -37,10 +37,13 @@
         <label for="website">Website:</label>
         <input name="website" data-bind="value: card.website" />
       <li>
-    </ul><br>
-    <h3>Back</h3><br>
-    <label for="initials">Initials:</label>
-    <input name="initials" data-bind="value: card.initials">
+      </ul><br>
+      <h3>Back</h3><br>
+      <label for="initials">Initials:</label>
+      <input name="initials" data-bind="value: card.initials">
+      <br>
+      <label for="color">Color:</label>
+      <select name="color" data-bind="options: card.colors, value: selectedColor"></select>
     </div>
     <div class="cards">
       <div class="card">
@@ -48,13 +51,18 @@
           <li data-bind="text: card.name"></li>
           <li data-bind="text: card.title"></li>
           <hr>
-          <li><i class="fa fa-envelope"></i>: <span data-bind="text: card.email"></span></li>
-          <li><i class="fa fa-code"></i>: <span data-bind="text: card.website"></span></li>
+          <li><i class="fa fa-envelope"></i>  <span data-bind="text: card.email"></span></li>
+          <li><i class="fa fa-code"></i>  <span data-bind="text: card.website"></span></li>
         </ul>
       </div>
       <div class="card">
-        <span class="initials">BT</span>
+        <span class="initials" data-bind="text: card.initials, style: { color: selectedColor }"></span>
       </div>
+    </div>
+    <div>
+      <h3 data-bind="visible: letterCharge() > 0">
+        Total charge: $<span data-bind="text: letterCharge().toFixed(2)"></span>
+      </h3>
     </div>
   </div>
 

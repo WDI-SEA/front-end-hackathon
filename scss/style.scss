@@ -1,9 +1,11 @@
 $brand: #E50300;
 $brand-secondary: #383D40;
-$r: 255;
-$g: 255;
+$r: 250;
+$g: 251;
 $b: 255;
-$font: 'Questrial', sans-serif;
+$font-primary: 'Ubuntu', sans-serif;
+$font-brand: 'Niconne', cursive;
+$font-card: 'Questrial', sans-serif;
 
 // @mixin box-shadow($right, $bottom, $blur, $color) {
 //   -webkit-box-shadow: $right, $bottom, $blur, $color;
@@ -17,10 +19,11 @@ $font: 'Questrial', sans-serif;
 // }
 
 body {
-  background-image: url("../img/office-building.jpeg");
+  background-image: url("https://images.unsplash.com/photo-1430165558479-de3cf8cf1478?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a8d560cd877f002980248703b48efff0");
   background: cover;
   background-size: 100%;
-  background-color: $brand;
+  background-color: $brand-secondary;
+  font-family: $font-primary;
 }
 
 .fancy_title {
@@ -32,12 +35,12 @@ body {
     font-size: 15px;
   }
   .char1 {
-    font-family: 'Rock Salt', cursive;
+    font-family: $font-brand;
     font-size: 80px;
     color: $brand
   }
   .char4 {
-    font-family: 'Rock Salt', cursive;
+    font-family: $font-brand;
     font-size: 80px;
     color: $brand;
   }
@@ -45,7 +48,7 @@ body {
 
 .workspace {
   // @include background-color(126, 178, 151, 0.5);
-  background-color: rgba($r, $g, $b, 1);
+  background-color: rgba($r, $g, $b, 0.9);
   // opacity: 0.5;
   margin: 50px 50px;
   border: none;
@@ -59,6 +62,16 @@ body {
   ul {
     list-style: none;
     display: inline-block;
+    margin: 0px;
+  }
+  input {
+    font-size: 12px;
+    width: 200px;
+  }
+
+  .initials {
+    font-family: $font-brand;
+    color: blue;
   }
 }
 
@@ -72,7 +85,7 @@ body {
 }
 
 .card {
-  font-family: $font;
+  font-family: $font-card;
   height: 150px;
   width: 300px;
   background-color: white;

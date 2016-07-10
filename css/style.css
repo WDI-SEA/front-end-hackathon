@@ -1,8 +1,9 @@
 body {
-  background-image: url("../img/office-building.jpeg");
+  background-image: url("https://images.unsplash.com/photo-1430165558479-de3cf8cf1478?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a8d560cd877f002980248703b48efff0");
   background: cover;
   background-size: 100%;
-  background-color: #E50300; }
+  background-color: #383D40;
+  font-family: "Ubuntu", sans-serif; }
 
 .fancy_title {
   color: #383D40;
@@ -11,16 +12,16 @@ body {
   .fancy_title .subtitle {
     font-size: 15px; }
   .fancy_title .char1 {
-    font-family: 'Rock Salt', cursive;
+    font-family: "Niconne", cursive;
     font-size: 80px;
     color: #E50300; }
   .fancy_title .char4 {
-    font-family: 'Rock Salt', cursive;
+    font-family: "Niconne", cursive;
     font-size: 80px;
     color: #E50300; }
 
 .workspace {
-  background-color: white;
+  background-color: rgba(250, 251, 255, 0.9);
   margin: 50px 50px;
   border: none;
   padding: 20px;
@@ -29,7 +30,14 @@ body {
     display: inline-block; }
   .workspace ul {
     list-style: none;
-    display: inline-block; }
+    display: inline-block;
+    margin: 0px; }
+  .workspace input {
+    font-size: 12px;
+    width: 200px; }
+  .workspace .initials {
+    font-family: "Niconne", cursive;
+    color: blue; }
 
 .content {
   display: inline-block; }
