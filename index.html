@@ -39,11 +39,13 @@
       <li>
       </ul><br>
       <h3>Back</h3><br>
-      <label for="initials">Initials:</label>
-      <input name="initials" data-bind="value: card.initials">
-      <br>
-      <label for="color">Color:</label>
-      <select name="color" data-bind="options: card.colors, value: selectedColor"></select>
+      <div class="back">
+        <label for="initials">Initials:</label>
+        <input name="initials" data-bind="value: card.initials">
+        <br>
+        <label for="color">Color:</label>
+        <select name="color" data-bind="options: card.colors, value: selectedColor"></select>
+      </div>
     </div>
     <div class="cards">
       <div class="card">
@@ -61,11 +63,11 @@
     </div>
     <div>
     <br>
-      <h3 data-bind="visible: letterCharge() > 0">
+      <h2 data-bind="visible: letterCharge() > 0">
         *Total charge: $<span data-bind="text: letterCharge().toFixed(2)"></span>
-      </h3>
+      </h2>
       <br>
-      <p>*cost is .01 per letter - total charge is per card</p>
+      <p style="font-size: 12px">*cost is .01 per letter - total charge is per card</p>
     </div>
   </div>
 

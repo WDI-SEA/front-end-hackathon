@@ -12,7 +12,7 @@ function businessCardViewModel() {
     email: ko.observable("btables@drop.com"),
     website: ko.observable("BobbyTables.com"),
     initials: ko.observable("BT"),
-    colors: ko.observableArray(['black', 'blue', 'green', 'red', 'pink', 'rebeccapurple'])
+    colors: ko.observableArray(['black', 'blue', 'green', 'red', 'pink', 'rebeccapurple', 'silver'])
   }
 
   self.selectedColor = ko.observable('black');
