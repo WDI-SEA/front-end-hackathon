@@ -1,0 +1,105 @@
+body {
+  background: url('http://i.imgur.com/eUf7tXk.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fancy_title {
+  height: 150px;
+  color: #666666;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Cantarell', sans-serif;
+}
+
+h1.fancy_title .char1, h1.fancy_title .char5 {
+  font-family: 'Meddon', cursive;
+}
+
+
+@-webkit-keyframes rotate {
+
+from {
+  -webkit-transform:rotate(0deg);
+  }
+to {
+  -webkit-transform:rotate(360deg);
+  }
+}
+
+h1.fancy_title {
+  animation-name: rotate;
+  animation-duration: 2s;
+}
+
+.meat {
+  float: right;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 50px;
+}
+
+.alcohols {
+  float: left;
+  text-align: center;
+  font-size: 50px;
+  display: block;
+}
+
+p.meat .line1 {
+  font-family: 'Fascinate Inline', cursive;
+  display: block;
+}
+p.meat .line2 {
+  font-family: 'Fascinate Inline', cursive;
+  display: block;
+}
+p.meat .line3 {
+  font-family: 'Fascinate Inline', cursive;
+  display: block;
+  text-transform: uppercase;
+}
+p.meat .line4 {
+  font-family: 'Fascinate Inline', cursive;
+  display: block;
+}
+p.meat .line5 {
+  font-family: 'Fascinate Inline', cursive;
+  display: block;
+}
+p.meat .line6 {
+  font-family: 'Fascinate Inline', cursive;
+  display: block;
+}
+
+p.sebastian {
+  float: left;
+  text-align: center;
+  font-size: 40px;
+}
+
+p.sebastian .line1 {
+  display: block;
+}
+p.sebastian .line2 {
+  display: block;
+}
+p.sebastian .line3 {
+  display: block;
+}
+p.sebastian .line4 {
+  display: block;
+}
+p.sebastian .line5 {
+  display: block;
+  font-family: 'MedievalSharp', cursive;
+}
+
+
+
+
+
+
