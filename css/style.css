@@ -21,18 +21,15 @@ h1.fancy_title .char1, h1.fancy_title .char5 {
 
 
 @-webkit-keyframes rotate {
-
-from {
-  -webkit-transform:rotate(0deg);
-  }
-to {
-  -webkit-transform:rotate(360deg);
-  }
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+ 40% {-webkit-transform: translateY(-30px);}
+ 60% {-webkit-transform: translateY(-15px);}
 }
 
 h1.fancy_title {
+  -webkit-animation-name: rotate;
   animation-name: rotate;
-  animation-duration: 2s;
+
 }
 
 .meat {
@@ -79,6 +76,8 @@ p.sebastian {
   float: left;
   text-align: center;
   font-size: 40px;
+  font-family: sans-serif;
+  font-weight: lighter;
 }
 
 p.sebastian .line1 {
@@ -89,6 +88,7 @@ p.sebastian .line2 {
 }
 p.sebastian .line3 {
   display: block;
+  font-weight: bold;
 }
 p.sebastian .line4 {
   display: block;
