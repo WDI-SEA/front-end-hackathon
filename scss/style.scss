@@ -1,5 +1,5 @@
-$brand: #40170A;
-$brand-secondary: #FFF;
+$brand: #E50300;
+$brand-secondary: #383D40;
 $r: 255;
 $g: 255;
 $b: 255;
@@ -17,31 +17,60 @@ $font: 'Questrial', sans-serif;
 // }
 
 body {
-  // background-image: url("../img/random_grey_variations.png");
+  background-image: url("../img/office-building.jpeg");
+  background: cover;
+  background-size: 100%;
   background-color: $brand;
 }
-h1 {
-  color: $brand;
+
+.fancy_title {
+  color: $brand-secondary;
+  font-size: 50px;
+  margin: 5px 5px;
+
+  .subtitle {
+    font-size: 15px;
+  }
+  .char1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 80px;
+    color: $brand
+  }
+  .char4 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 80px;
+    color: $brand;
+  }
 }
+
 .workspace {
   // @include background-color(126, 178, 151, 0.5);
-  background-color: rgba($r, $g, $b, 0.7);
+  background-color: rgba($r, $g, $b, 1);
   // opacity: 0.5;
   margin: 50px 50px;
   border: none;
   padding: 20px;
   height: 500px;
-  box-shadow: 0px 0px 20px $brand-secondary;
+  // box-shadow: 0px 0px 20px $brand-secondary;
 
+  h3 {
+    display: inline-block;
+  }
   ul {
     list-style: none;
     display: inline-block;
   }
 }
+
+.content {
+  display: inline-block;
+}
+
 .cards {
   float: right;
   margin-right: 20px;
 }
+
 .card {
   font-family: $font;
   height: 150px;
@@ -51,21 +80,23 @@ h1 {
   margin: 30px 10px;
   line-height: 150px;
   box-shadow: 10px 10px 6px #666666;
+  text-align: center;
 
   ul {
-    list-style: none;
+    background-color: none;
     vertical-align: middle;
-    display: inline-block;
     line-height: normal;
     padding: 20px 20px;
     margin: 2px 2px;
   }
-
   li {
     text-decoration: none;
     line-height: 20px;
     padding: 1px;
     margin: 0;
+  }
+  .initials {
+    font-size: 40px;
   }
 }
 

@@ -6,15 +6,20 @@
 
   <title>BizKard</title>
   <!-- Google Font -->
-  <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+  <link href='@import url(https://fonts.googleapis.com/css?family=Questrial|Rock+Salt);' rel='stylesheet' type='text/css'>
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <!-- Local Style -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
   <div class="workspace">
-    <h1>BizKard</h1>
-    <p>Create aswesome business cards</p>
+  <span class="fancy_title">BizKard</span>
+  <span class="subtitle">Kreate business cards</span>
+  <br>
+  <div class="content">
+    <h3>Front</h3><br>
     <ul>
       <li>
         <label for="name">Name:</label>
@@ -32,27 +37,35 @@
         <label for="website">Website:</label>
         <input name="website" data-bind="value: card.website" />
       <li>
-       <!-- <input data-bind="value: title" /> -->
-    </ul>
+    </ul><br>
+    <h3>Back</h3><br>
+    <label for="initials">Initials:</label>
+    <input name="initials" data-bind="value: card.initials">
+    </div>
     <div class="cards">
       <div class="card">
         <ul>
           <li data-bind="text: card.name"></li>
           <li data-bind="text: card.title"></li>
-          <li data-bind="text: card.email"></li>
-          <li data-bind="text: card.website"></li>
+          <hr>
+          <li><i class="fa fa-envelope"></i>: <span data-bind="text: card.email"></span></li>
+          <li><i class="fa fa-code"></i>: <span data-bind="text: card.website"></span></li>
         </ul>
       </div>
       <div class="card">
-        <h1>BT</h1>
+        <span class="initials">BT</span>
       </div>
     </div>
   </div>
 
-
-
+<!-- Scripts -->
+  <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- Knockout -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+  <!-- lettering -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+  <!-- local -->
   <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

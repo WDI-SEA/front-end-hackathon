@@ -1,19 +1,38 @@
 body {
-  background-color: #40170A; }
+  background-image: url("../img/office-building.jpeg");
+  background: cover;
+  background-size: 100%;
+  background-color: #E50300; }
 
-h1 {
-  color: #40170A; }
+.fancy_title {
+  color: #383D40;
+  font-size: 50px;
+  margin: 5px 5px; }
+  .fancy_title .subtitle {
+    font-size: 15px; }
+  .fancy_title .char1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 80px;
+    color: #E50300; }
+  .fancy_title .char4 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 80px;
+    color: #E50300; }
 
 .workspace {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: white;
   margin: 50px 50px;
   border: none;
   padding: 20px;
-  height: 500px;
-  box-shadow: 0px 0px 20px #FFF; }
+  height: 500px; }
+  .workspace h3 {
+    display: inline-block; }
   .workspace ul {
     list-style: none;
     display: inline-block; }
+
+.content {
+  display: inline-block; }
 
 .cards {
   float: right;
@@ -27,11 +46,11 @@ h1 {
   border: 1px solid gray;
   margin: 30px 10px;
   line-height: 150px;
-  box-shadow: 10px 10px 6px #666666; }
+  box-shadow: 10px 10px 6px #666666;
+  text-align: center; }
   .card ul {
-    list-style: none;
+    background-color: none;
     vertical-align: middle;
-    display: inline-block;
     line-height: normal;
     padding: 20px 20px;
     margin: 2px 2px; }
@@ -40,5 +59,7 @@ h1 {
     line-height: 20px;
     padding: 1px;
     margin: 0; }
+  .card .initials {
+    font-size: 40px; }
 
 /*# sourceMappingURL=style.css.map */
