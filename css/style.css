@@ -1,11 +1,40 @@
-svg{
-  background-color:yellow;
+div.container {
+  height: 600px;
+  width: 1000px;
+  background-color:grey;
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  padding:  4px 0 0 0;
 }
 
 div.bar {
-  width: 4px;
+  width: 8px;
   display:inline-block;
   background-color:teal;
   height: 4px;
-  margin: 2px;
+  margin: 0 2px;
+}
+
+body {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+}
+
+.text {
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform: rotate(90deg);
+    white-space:nowrap;
+    display:block;
+    bottom:0;
+  font-size: 8px;
+  color: white;
+  width: 600px;
+  height: 2px;
+  margin: 0 ;
 }
