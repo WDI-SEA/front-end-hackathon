@@ -1,0 +1,53 @@
+body{
+  background-image: url(/img/felt.png);
+  font-family: "Courier";
+  color: #2EE600;
+  text-shadow: 0 0 5px lime;
+  font-family: "Courier";
+  font-size: 16px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+}
+
+#mainDiv {
+  background-image: url(/img/monitor.png);
+  background-size: 100% 100%;
+  width: 70%;
+  height:800px;
+  margin: 0 auto;
+  padding-top: 9%;
+  border-radius: 15px;
+}
+
+#textDiv {
+  width: 85%;
+  height: 700px;
+  margin: 0 auto;
+  border-radius: 15%;
+  overflow: hidden;
+}
+
+.flickrGallery {
+  width: 90%;
+  padding-left: 12%;
+}
+
+
+h1{
+  padding-top: 10px;
+  text-align: center;
+  text-shadow: 0 0 5px lime;
+}
+
+p{
+  font-family: "Courier";
+  font-size: 16px;
+  padding: 50px 0 0 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+}
+
+img{
+  height: 125px;
+  margin: 27px;
+}
