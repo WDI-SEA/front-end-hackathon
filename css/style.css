@@ -15,21 +15,40 @@ body {
   font-family: 'Cantarell', sans-serif;
 }
 
+@keyframes text {
+  0% {font-size: 50px;}
+  50% {font-size: 120px;}
+  100% {font-size: 50px;}
+}
+
 h1.fancy_title .char1, h1.fancy_title .char5 {
   font-family: 'Meddon', cursive;
 }
 
-
-@-webkit-keyframes rotate {
- 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
- 40% {-webkit-transform: translateY(-30px);}
- 60% {-webkit-transform: translateY(-15px);}
+.clickMe span  {
+  animation: text 2s infinite;
+  animation-play-state: paused;
 }
 
-h1.fancy_title {
-  -webkit-animation-name: rotate;
-  animation-name: rotate;
+h1.fancy_title .char1:hover, h1.fancy_title .char5:hover, .clickMe span:hover {
+  animation-play-state: running;
+}
 
+@keyframes opacity {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+h1.fancy_title .char1, h1.fancy_title .char5 {
+  animation: opacity 2s infinite;
+  animation-play-state: paused;
+}
+
+.clickMe {
+  background-color: #000080;
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 .meat {
@@ -98,8 +117,19 @@ p.sebastian .line5 {
   font-family: 'MedievalSharp', cursive;
 }
 
+/*vue.js below*/
+table {
+  text-align: center;
+  border: 2px solid #42b983;
+  border-radius: 3px;
+  background-color: #fff;
+}
 
-
-
-
-
+th {
+  background-color: #42b983;
+  color: rgba(255,255,255,0.66);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -user-select: none;
+}
