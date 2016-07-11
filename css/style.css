@@ -1,0 +1,11 @@
+svg{
+  background-color:yellow;
+}
+
+div.bar {
+  width: 4px;
+  display:inline-block;
+  background-color:teal;
+  height: 4px;
+  margin: 2px;
+}
