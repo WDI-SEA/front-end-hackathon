@@ -1,6 +1,7 @@
 
 body {
   background-color: #f06;
+  font-family: 'Istok Web', sans-serif;
 }
 
 .wrapper {
@@ -9,7 +10,6 @@ body {
 }
 
 #ryanarea {
-
  background-color: #FFF;
 }
 

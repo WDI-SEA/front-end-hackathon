@@ -6,7 +6,7 @@ var h1box = h1draw.rect(500, 200).attr({ fill: '#000' })
 
 var h1text = h1draw.text('Ryan Rotz')
 h1text.font({
-    family: 'Arial'
+    family: 'Istok Web'
   , size: 100
   , anchor: 'left'
   , leading: 1.3
@@ -19,7 +19,7 @@ var h2draw = SVG('h2').size(500, 100)
 var h2box = h2draw.rect(500, 100).attr({fill: '#FFF'})
 var h2text = h2draw.text('Full-Stack Web Developer')
 h2text.font({
-    family: 'Arial'
+    family: 'Istok Web'
   , size: 40
 })
 h2box = h2box.clipWith(h2text)
@@ -31,7 +31,7 @@ var circle = btndraw.circle(100).attr({ fill: '#FFF' })
 
 var btntext = btndraw.text('Flip me')
 btntext.font({
-    family: 'Arial'
+    family: 'Istok Web'
   , size: 18
 })
 btntext = btntext.move(21, 39)
@@ -47,7 +47,7 @@ var biotext = biodraw.text(function(add) {
 
 })
 biotext.font({
-  family: 'Arial'
+  family: 'Istok Web'
   , size: 20
 })
 biobox = biobox.clipWith(biotext)
