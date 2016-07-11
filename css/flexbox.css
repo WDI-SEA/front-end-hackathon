@@ -1,0 +1,31 @@
+body {
+  overflow: scroll;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  border: solid 1px red;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+
+#header {
+  width: 100%;
+}
+
+#box1, #box2, #box3 {
+  border: solid 1px black;
+}
+
+#box1, #box3 {
+  width:20%;
+}
+
+#box2 {
+  width: 60%;
+}
