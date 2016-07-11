@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: 'Josefin Slab', serif;
+}
+
+svg {
+  background-color: black;
+  display: block;
+  margin: auto;
+}
+
+path {
+  stroke: white;
+  stroke-width: 0.5px;
+  fill: black;
+}
+
+#loadingImage {
+  margin: 0 auto;
+  margin-top: 200px;
+}
