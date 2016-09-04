@@ -31,11 +31,15 @@ function init() {
   geometry = new THREE.PlaneGeometry( 20000, 20000, worldWidth - 1, worldDepth - 1 );
   geometry.rotateX( - Math.PI / 2 );
 
-  for ( var i = 0, l = geometry.vertices.length; i < l; i ++ ) {
+  geometry.vertices.forEach(function(vert){
+    vert.y = 100 * noise.perlin2(vert.x / 100, vert.z / 100);
+  })
 
-    geometry.vertices[ i ].y = 100 * noise.perlin2(geometry.vertices[i].x / 100, geometry.vertices[i].x / 100)
+  // for ( var i = 0, l = geometry.vertices.length; i < l; i ++ ) {
 
-  }
+  //   geometry.vertices[ i ].y = 100 * noise.perlin2(geometry.vertices[i].x / 100, geometry.vertices[i].y / 100)
+
+  // }
 
   var texture = new THREE.TextureLoader().load( "textures/plaster.jpg" );
   texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
