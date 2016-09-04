@@ -1,24 +1,105 @@
-var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
-var renderer = new THREE.WebGLRenderer();
-renderer.setSize( window.innerWidth, window.innerHeight );
-document.body.appendChild( renderer.domElement );
+var container, stats;
 
-var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-var material = new THREE.MeshBasicMaterial( { color: 0xffff00 } );
-var cube = new THREE.Mesh( geometry, material );
-scene.add( cube );
+var camera, controls, scene, renderer;
 
-camera.position.z = 5;
-console.log("Threejs setup maybe?");
-var render = function () {
-  requestAnimationFrame( render );
+var mesh, texture, geometry, material;
 
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
+var worldWidth = 128, worldDepth = 128,
+worldHalfWidth = worldWidth / 2, worldHalfDepth = worldDepth / 2;
 
-  renderer.render(scene, camera);
-};
+var clock = new THREE.Clock();
 
-render();
+init();
+animate();
+
+function init() {
+
+  container = document.getElementById( 'container' );
+
+  camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 20000 );
+  camera.position.y = 200;
+
+  controls = new THREE.FirstPersonControls( camera );
+
+  controls.movementSpeed = 500;
+  controls.lookSpeed = 0.1;
+
+  scene = new THREE.Scene();
+  scene.fog = new THREE.FogExp2( 0xaaccff, 0.0001 );
+
+  geometry = new THREE.PlaneGeometry( 20000, 20000, worldWidth - 1, worldDepth - 1 );
+  geometry.rotateX( - Math.PI / 2 );
+
+  for ( var i = 0, l = geometry.vertices.length; i < l; i ++ ) {
+
+    geometry.vertices[ i ].y = 100 * noise.perlin2(geometry.vertices[i].x / 100, geometry.vertices[i].x / 100)
+
+  }
+
+  var texture = new THREE.TextureLoader().load( "textures/plaster.jpg" );
+  texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+  texture.repeat.set( 5, 5 );
+
+  material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF, map: texture } );
+
+  mesh = new THREE.Mesh( geometry, material );
+  scene.add( mesh );
+
+  renderer = new THREE.WebGLRenderer();
+  renderer.setClearColor( 0xaaccff );
+  renderer.setPixelRatio( window.devicePixelRatio );
+  renderer.setSize( window.innerWidth, window.innerHeight );
+
+  container.innerHTML = "";
+
+  container.appendChild( renderer.domElement );
+
+  //stats = new Stats();
+  //container.appendChild( stats.dom );
+
+  //
+
+  window.addEventListener( 'resize', onWindowResize, false );
+
+}
+
+function onWindowResize() {
+
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+
+  renderer.setSize( window.innerWidth, window.innerHeight );
+
+  controls.handleResize();
+
+}
+
+//
+
+function animate() {
+
+  requestAnimationFrame( animate );
+
+  render();
+  //stats.update();
+
+}
+
+function render() {
+
+  var delta = clock.getDelta(),
+    time = clock.getElapsedTime() * 10;
+
+  // for ( var i = 0, l = geometry.vertices.length; i < l; i ++ ) {
+
+  //   geometry.vertices[ i ].y = 35 * Math.sin( i / 5 + ( time + i ) / 7 );
+
+  // }
+
+  // mesh.geometry.verticesNeedUpdate = true;
+
+  controls.update( delta );
+  renderer.render( scene, camera );
+
+}
