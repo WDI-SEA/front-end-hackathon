@@ -26,7 +26,7 @@ function init() {
   controls.lookSpeed = 0.1;
 
   scene = new THREE.Scene();
-  scene.fog = new THREE.FogExp2( 0xaaccff, 0.0001 );
+  scene.fog = new THREE.FogExp2( 0xaaccff, 0.0003 );
 
   geometry = new THREE.PlaneGeometry( 20000, 20000, worldWidth - 1, worldDepth - 1 );
   geometry.rotateX( - Math.PI / 2 );
@@ -56,9 +56,9 @@ function init() {
 
   // }
 
-  var texture = new THREE.TextureLoader().load( "textures/plaster.jpg" );
+  var texture = new THREE.TextureLoader().load( "textures/groundtex.png" );
   texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-  texture.repeat.set( 5, 5 );
+  texture.repeat.set( 50 , 50 );
 
   material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF, map: texture } );
 
