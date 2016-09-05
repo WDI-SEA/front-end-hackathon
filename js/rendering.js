@@ -3,7 +3,7 @@ var container, stats;
 
 var camera, controls, scene, renderer;
 
-var mesh, texture, geometry, material;
+var mesh, texture, geometry, material, treeGeo, treeMat, treeSprite, treeBillboards;
 
 var worldWidth = 128, worldDepth = 128,
 worldHalfWidth = worldWidth / 2, worldHalfDepth = worldDepth / 2;
@@ -31,10 +31,25 @@ function init() {
   geometry = new THREE.PlaneGeometry( 20000, 20000, worldWidth - 1, worldDepth - 1 );
   geometry.rotateX( - Math.PI / 2 );
 
+  hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 0.6 );
+  hemiLight.color.setHSL( 0.6, 1, 0.6 );
+  hemiLight.groundColor.setHSL( 0.095, 1, 0.75 );
+  hemiLight.position.set( 0, 500, 0 );
+  scene.add( hemiLight );
+
+  treeGeo = new THREE.Geometry();
+
+  treeSprite = new THREE.TextureLoader().load( "textures/tree2.png" );
+
   geometry.vertices.forEach(function(vert){
-    vert.y = 100 * noise.perlin2(vert.x / 100, vert.z / 100);
+    vert.y = 50 * noise.perlin2(vert.x, vert.z);
+    initBillboard(treeGeo, vert);
   })
 
+  treeMat = new THREE.PointsMaterial( { size: 200, sizeAttenuation: true, map: treeSprite, alphaTest: 0.5, transparent: true } );
+
+  treeBillboards = new THREE.Points(treeGeo, treeMat);
+  scene.add(treeBillboards);
   // for ( var i = 0, l = geometry.vertices.length; i < l; i ++ ) {
 
   //   geometry.vertices[ i ].y = 100 * noise.perlin2(geometry.vertices[i].x / 100, geometry.vertices[i].y / 100)
@@ -106,4 +121,17 @@ function render() {
   controls.update( delta );
   renderer.render( scene, camera );
 
+}
+
+function initBillboard(geometry, vector3){
+  var vertex = new THREE.Vector3();
+  vertex.x = vector3.x + getRandomArbitrary(-50, 50);
+  vertex.y = vector3.y + 50;
+  vertex.z = vector3.z + getRandomArbitrary(-50, 50);
+
+  geometry.vertices.push(vertex)
+}
+
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
 }
