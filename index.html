@@ -3,9 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Front-End</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Temp Converter</title>
+
 </head>
+
 <body>
-  <h1>Hello Front-End</h1>
+  <h1><script type="text/javascript">
+   var message = "Temperature Converter 3000";
+   var colors = new Array("#ff0000","#FAFF6E","#6EDBFF");
+   for (var i = 0; i < message.length; i++)
+      document.write("<span style=\"color:" + colors[(i % colors.length)] + ";\">" + message[i] + "</span>");
+</script></h1>
+
+<form>
+	<div id= tempBox>
+		<input class= temp type="text" placeholder= "Enter Temperature Here" id= userNumber>
+	</div>
+
+<br>
+	<div id= forc>
+		<input id= F type="radio" name="tempType">°F     
+		<input id= C type="radio" name="tempType" checked="checked"> °C
+	</div>
+<br>
+	<div id= buttons>
+		<input id= subButton type="button" value="Convert">
+		<input id= clearButton type="reset" value="Clear" onclick="">
+	</div>	
+
+</form>
+<div id= resultBox>
+		
+	</div>
+
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
+<script>
+  // Let's define a command.
+  var commands = {
+    'hello': function() { alert('Hey there!'); },
+    'what is your name': function() { alert('Who is asking? Are you John Conner?'); },
+    'maybe': function() { alert('I dont believe you, dispatching Arnold...'); }
+  };
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening.
+  annyang.start();
+
+</script>
 </body>
 </html>

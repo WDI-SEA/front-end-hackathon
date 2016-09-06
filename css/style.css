@@ -1,0 +1,64 @@
+h1 {
+  color: black;
+  text-align: center;
+}
+body {
+	color: white;
+	font-family: impact;
+	font-size: 35px;
+	background-color: #3F6275;
+}
+#subButton {
+	background-color: green;
+	color: white;
+	width: 100px;
+	height: 40px;
+	margin-right: 20px;
+	font-size: 20px;
+	font-family: Impact;
+	}
+#clearButton {
+	background-color: black;
+	color: white;
+	width: 100px;
+	height: 40px;
+	margin-left: 20px;
+	font-size: 20px;
+	font-family: impact;
+}
+.temp {
+	width: 500px;
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+}
+.F {
+	margin-right: 20px;
+}
+.C {
+	margin-left: 20px;
+}
+#buttons {
+	text-align: center;
+}
+#tempBox {
+	text-align: center;
+}
+#forc {
+	text-align: center;
+}
+.conversion {
+	text-align: center;
+	font-size: 70px;
+	margin-top: 20px;
+	height: 150px;
+}
+#resultBox {
+	width: 250px;
+	height: 50px;
+	background-color: white;
+	margin: 30px auto;
+	color: red;
+	text-align: center;
+	padding-top: 10px
+}
