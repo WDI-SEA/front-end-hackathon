@@ -1,0 +1,51 @@
+let canvas = document.querySelector('#canvas');
+let context = canvas.getContext('2d');
+
+let pxRatio = window.devicePixelRatio || 1;
+
+let width = canvas.width = window.innerWidth * pxRatio;
+let height = canvas.height = window.innerHeight * pxRatio;
+
+let centerX = width / 2;
+let centerY = height / 2;
+
+let quantity = 100;
+
+let size = 20;
+
+let speed = 0;
+
+function render() {
+
+  context.clearRect(0, 0, width, height);
+
+  speed += 0.01;
+
+  // Enable for black.
+  // context.globalCompositeOperation = 'xor';
+  
+  for (let i = 0; i < quantity; i++) {
+    
+    let progress = speed * (quantity - i) * 0.2;
+
+    let radius = size * i;
+
+    let x = centerX + Math.cos(progress) * size / 2;
+    let y = centerY + Math.sin(progress) * size / 2;
+
+    context.beginPath();
+
+    context.arc(x, y, radius, 0, Math.PI * 2);
+
+    context.stroke();
+
+    context.closePath();
+  }
+
+  // Enable for black.
+  // context.fill();
+
+  requestAnimationFrame(render);
+};
+
+render();

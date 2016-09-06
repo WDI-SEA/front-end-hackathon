@@ -1,0 +1,16 @@
+body{
+	background: #DC007D;
+}
+.svg{
+	  display: absolute;
+
+}
+#canvas {
+  width: 100%;
+  height: 100%;
+  display: relative;
+  background: #DC007D;
+}
+.outsideWrapper{
+	display: relative;
+}
