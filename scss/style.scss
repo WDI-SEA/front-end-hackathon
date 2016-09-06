@@ -1,0 +1,120 @@
+$brand: #E50300;
+$brand-secondary: #383D40;
+$r: 250;
+$g: 251;
+$b: 255;
+$font-primary: 'Ubuntu', sans-serif;
+$font-brand: 'Niconne', cursive;
+$font-card: 'Questrial', sans-serif;
+
+// @mixin box-shadow($right, $bottom, $blur, $color) {
+//   -webkit-box-shadow: $right, $bottom, $blur, $color;
+//   -ms-box-shadow: $right, $bottom, $blur, $color;
+//   -o-box-shadow: $right, $bottom, $blur, $color;
+// }
+
+// @mixin background-color($r, $g, $b, $a) {
+//   background-color: rgba($r, $g, $b, $a);
+//   background-color: rgb($r, $g, $b);
+// }
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1430165558479-de3cf8cf1478?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a8d560cd877f002980248703b48efff0");
+  background: cover;
+  background-size: 100%;
+  background-color: $brand-secondary;
+  font-family: $font-primary;
+}
+
+.fancy_title {
+  color: $brand-secondary;
+  font-size: 50px;
+  margin: 5px 5px;
+
+  .subtitle {
+    font-size: 15px;
+  }
+  .char1 {
+    font-family: $font-brand;
+    font-size: 80px;
+    color: $brand
+  }
+  .char4 {
+    font-family: $font-brand;
+    font-size: 80px;
+    color: $brand;
+  }
+}
+
+.workspace {
+  // @include background-color(126, 178, 151, 0.5);
+  background-color: rgba($r, $g, $b, 0.9);
+  // opacity: 0.5;
+  margin: 50px 50px;
+  border: none;
+  padding: 20px;
+  height: 500px;
+  // box-shadow: 0px 0px 20px $brand-secondary;
+
+  h3 {
+    display: inline-block;
+  }
+  ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+  }
+  input {
+    font-size: 12px;
+    width: 200px;
+  }
+
+  .initials {
+    font-family: $font-brand;
+    color: blue;
+  }
+}
+
+.content {
+  display: inline-block;
+
+  .back {
+    display: inline-block;
+    padding-left: 40px;
+  }
+}
+
+.cards {
+  float: right;
+  margin-right: 20px;
+}
+
+.card {
+  font-family: $font-card;
+  height: 150px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid gray;
+  margin: 30px 10px;
+  line-height: 150px;
+  box-shadow: 5px 5px 6px #888888;
+  text-align: center;
+
+  ul {
+    background-color: none;
+    vertical-align: middle;
+    line-height: normal;
+    padding: 20px 20px;
+    margin: 2px 2px;
+  }
+  li {
+    text-decoration: none;
+    line-height: 20px;
+    padding: 1px;
+    margin: 0;
+  }
+  .initials {
+    font-size: 40px;
+  }
+}
+

@@ -1,0 +1,76 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1430165558479-de3cf8cf1478?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a8d560cd877f002980248703b48efff0");
+  background: cover;
+  background-size: 100%;
+  background-color: #383D40;
+  font-family: "Ubuntu", sans-serif; }
+
+.fancy_title {
+  color: #383D40;
+  font-size: 50px;
+  margin: 5px 5px; }
+  .fancy_title .subtitle {
+    font-size: 15px; }
+  .fancy_title .char1 {
+    font-family: "Niconne", cursive;
+    font-size: 80px;
+    color: #E50300; }
+  .fancy_title .char4 {
+    font-family: "Niconne", cursive;
+    font-size: 80px;
+    color: #E50300; }
+
+.workspace {
+  background-color: rgba(250, 251, 255, 0.9);
+  margin: 50px 50px;
+  border: none;
+  padding: 20px;
+  height: 500px; }
+  .workspace h3 {
+    display: inline-block; }
+  .workspace ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0px; }
+  .workspace input {
+    font-size: 12px;
+    width: 200px; }
+  .workspace .initials {
+    font-family: "Niconne", cursive;
+    color: blue; }
+
+.content {
+  display: inline-block; }
+  .content .back {
+    display: inline-block;
+    padding-left: 40px; }
+
+.cards {
+  float: right;
+  margin-right: 20px; }
+
+.card {
+  font-family: "Questrial", sans-serif;
+  height: 150px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid gray;
+  margin: 30px 10px;
+  line-height: 150px;
+  box-shadow: 5px 5px 6px #888888;
+  text-align: center; }
+  .card ul {
+    background-color: none;
+    vertical-align: middle;
+    line-height: normal;
+    padding: 20px 20px;
+    margin: 2px 2px; }
+  .card li {
+    text-decoration: none;
+    line-height: 20px;
+    padding: 1px;
+    margin: 0; }
+  .card .initials {
+    font-size: 40px; }
+
+/*# sourceMappingURL=style.css.map */
