@@ -1,6 +1,6 @@
 #Rotate Me
 
-The goal of this project was to learn a new JavaScript library and build something visually appealing in a weekend. I chose SVG.js. I didn't even know what an SVG file was when I started—let alone the library—but by the end of the weekend I had built something interactive and awesome.
+The goal of this project was to learn a new JavaScript library and build something visually appealing in a weekend. I chose SVG.js. I didn't even know what an SVG file was when I started—let alone the library—but by the end of the weekend I had built something interactive and awesome. Check it out: https://ryanrotz.github.io/rotate-me/
 
 ##Play with the code
 
