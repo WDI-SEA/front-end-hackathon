@@ -29,12 +29,12 @@ h2box.transform({ rotation: 180 })
 var btndraw = SVG('btn').size(200, 200)
 var circle = btndraw.circle(100).attr({ fill: '#FFF' })
 
-var btntext = btndraw.text('Flip me')
+var btntext = btndraw.text('Rotate me')
 btntext.font({
     family: 'Istok Web'
   , size: 18
 })
-btntext = btntext.move(21, 39)
+btntext = btntext.move(8, 39)
 
 // bio
 var biodraw = SVG('bio').size(530, 100).hide()
@@ -59,6 +59,7 @@ biobox = biobox.clipWith(biotext)
 
 var rect = blankhead.size(1680, 1260).attr({ fill: '#F06' }).transform({ rotation: 162.5 })
 
+// Animations function that is passed into event listener.
 var click = function() {
   rect.animate(2000, '>', 0).transform({ rotation: 0 }).after(function() {
   // this.animate().attr({ fill: 'green' })
@@ -72,6 +73,7 @@ var click = function() {
   h2box.animate(2000, '>', 0).transform({ rotation: 0 })
 }
 
+// event listener
 circle.on('click', click)
 
 });
