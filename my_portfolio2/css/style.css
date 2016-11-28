@@ -1,0 +1,26 @@
+body {
+	/*margin-left: 0;*/
+	padding-top: 40px;	
+	/*padding-left: 0;*/
+}
+
+.navbar {	
+	height: 40px;
+	line-height: 40px;
+}
+
+/*.overview {
+	background-color: black;
+}*/
+
+.bubbleChart {
+	min-width: 100px;
+	max-height: 560px;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+/*.bubbleChart svg {
+  background: #000000;
+}*/
