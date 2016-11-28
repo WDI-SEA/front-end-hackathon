@@ -1,0 +1,68 @@
+body {
+	background-color: white;
+}
+
+div {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.right_divs{
+	margin-top: 5px;
+	font-size: 18px;
+}
+
+#div_top{
+	background-color: white;
+	color: #333333;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#div_middle{
+	background-color: orange;
+}
+
+#div_right{
+	background-color: white;
+	height: 400px;
+	width: 100%;
+	float: right;
+}
+
+#div_input_label{
+	background-color: white;
+	margin-top: 30px;
+	text-decoration: underline;
+	color: #333333;
+}
+
+#div_input{
+	background-color: white;
+	width: 30%;
+}
+
+#div_output_label{
+	background-color: white;
+	margin-top: 20px;
+	text-decoration: underline;
+	color: #333333;
+	height: 22px;
+}
+
+#div_output{
+	background-color: white;
+}
+
+#div_switch{
+	background-color: white;
+	color: #333333;
+}
+
+#input_temp {
+	height: 22px;
+	width: 80px;
+	border: 1px;
+	font-size: 18px;
+	text-align: center;
+}
