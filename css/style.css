@@ -1,0 +1,135 @@
+body {
+  background: url('http://i.imgur.com/eUf7tXk.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fancy_title {
+  height: 150px;
+  color: #666666;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Cantarell', sans-serif;
+}
+
+@keyframes text {
+  0% {font-size: 50px;}
+  50% {font-size: 120px;}
+  100% {font-size: 50px;}
+}
+
+h1.fancy_title .char1, h1.fancy_title .char5 {
+  font-family: 'Meddon', cursive;
+}
+
+.clickMe span  {
+  animation: text 2s infinite;
+  animation-play-state: paused;
+}
+
+h1.fancy_title .char1:hover, h1.fancy_title .char5:hover, .clickMe span:hover {
+  animation-play-state: running;
+}
+
+@keyframes opacity {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+h1.fancy_title .char1, h1.fancy_title .char5 {
+  animation: opacity 2s infinite;
+  animation-play-state: paused;
+}
+
+.clickMe {
+  background-color: #000080;
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.meat {
+  float: right;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 50px;
+}
+
+.alcohols {
+  float: left;
+  text-align: center;
+  font-size: 50px;
+  display: block;
+}
+
+p.meat .line1 {
+  font-family: 'Fascinate Inline', cursive;
+  display: block;
+}
+p.meat .line2 {
+  font-family: 'Fascinate Inline', cursive;
+  display: block;
+}
+p.meat .line3 {
+  font-family: 'Fascinate Inline', cursive;
+  display: block;
+  text-transform: uppercase;
+}
+p.meat .line4 {
+  font-family: 'Fascinate Inline', cursive;
+  display: block;
+}
+p.meat .line5 {
+  font-family: 'Fascinate Inline', cursive;
+  display: block;
+}
+p.meat .line6 {
+  font-family: 'Fascinate Inline', cursive;
+  display: block;
+}
+
+p.sebastian {
+  float: left;
+  text-align: center;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+p.sebastian .line1 {
+  display: block;
+}
+p.sebastian .line2 {
+  display: block;
+}
+p.sebastian .line3 {
+  display: block;
+  font-weight: bold;
+}
+p.sebastian .line4 {
+  display: block;
+}
+p.sebastian .line5 {
+  display: block;
+  font-family: 'MedievalSharp', cursive;
+}
+
+/*vue.js below*/
+table {
+  text-align: center;
+  border: 2px solid #42b983;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+th {
+  background-color: #42b983;
+  color: rgba(255,255,255,0.66);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -user-select: none;
+}
